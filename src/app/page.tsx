@@ -11,7 +11,7 @@ export default function Home() {
             target="_blank"
             className="underline"
           >
-            GhulamMohi-ud-Din
+            GhulamMohi-ud-Din ( Gamma)
           </Link>
         </div>
       </div>
