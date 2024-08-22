@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
 
-export default nextConfig;
+    experimental:{
+      typedRoutes:true,
+    },
+      images: {
+        domains: ['images.unsplash.com'],
+      },
+    };
+    
+    export default nextConfig;

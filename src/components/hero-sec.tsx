@@ -4,7 +4,7 @@ export default function Hero() {
   return (
 
     <>
-    <div>
+    <div className='py-32'>
       <div className='py-12 text-white flex items-center gap-32'>
         <p className='text-7xl font-bold tracking-[0.2rem]'><span className='text-[#D0FF71] text-9xl font-extrabold'>S</span>HAPING</p>
 
