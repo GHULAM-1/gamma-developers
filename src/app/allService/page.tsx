@@ -1,16 +1,18 @@
 "use client";
+import SectionDivider from "@/components/section-divider";
 import { ServicesType } from "@/types/all-types";
 import { Services } from "@/data/all-service-data";
-import { CodeXml } from "lucide-react";
-import SectionDivider from "./section-divider";
 import { ArrowUpRight } from 'lucide-react';
 
 export default function AllServices() {
   return (
     <>
     <SectionDivider text="Our Services"/>
+    <div className="mb-20">
+
       {Services.map((service: ServicesType, index: number) => {
         return (
+          <a href={`/allService/${service.id}`} key={service.id}>
           <div
             key={index}
             className="relative text-white group flex justify-around border-b-[1px] py-8 items-center"
@@ -37,8 +39,10 @@ export default function AllServices() {
             <ArrowUpRight className="group-hover:scale-150 ease-in-out transition group-hover:transform duration-200" size={20}/>
             </div>
           </div>
+          </a>
         );
       })}
+    </div>
     </>
   );
 }
