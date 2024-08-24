@@ -6,7 +6,7 @@ import { PortfolioCardType } from "@/types/all-types";
 export default function DirectionAwareHoverDemo() {
   return (
     <>
-      <div className="mb-8 grid grid-cols-2 justify-items-center mt-[-30px] gap-5 p-20">
+      <div className="mb-8 grid grid-cols-1 md:grid-cols-2 justify-items-center mt-0 md:mt-[-25px] gap-5 md:p-0 lg:p-20">
         {AllPortfolioCardsData.map((portfolioCard: PortfolioCardType) => {
           return (
             <a href={`/portfolio/${portfolioCard.id}`} key={portfolioCard.id}>

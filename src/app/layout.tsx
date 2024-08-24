@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="flex justify-center items-center w-full  ">
-      <body className={`${inter.className} max-w-[1440px] w-full bg-black p-7`}>
+    <html lang="en" className="flex justify-center overflow-x-hidden items-center w-full  ">
+      <body className={`${inter.className} max-w-[1440px] w-full overflow-x-hidden bg-black p-7`}>
         
         <NavBar/>
         {children}

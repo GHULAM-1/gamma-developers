@@ -37,7 +37,7 @@ export const DirectionAwareHover = ({
     <motion.div
       ref={ref}
       className={cn(
-        "md:h-[28rem] w-60 h-60 md:w-[30.8rem] bg-transparent rounded-lg overflow-hidden group/card relative",
+        " w-96 md:h-[20rem] md:w-[23rem] lg:h-[23rem] lg:w-[23.8rem] xl:w-[30.8rem] xl:h-[28rem] bg-transparent rounded-lg overflow-hidden group/card relative",
         className
       )}
     >
@@ -59,7 +59,7 @@ export const DirectionAwareHover = ({
             <Image
               alt="image"
               className={cn(
-                "h-full py-3 w-full bg-gray-900 object-contain hover:blur-[2px] hover:opacity-95 ease-in-out transition duration-200",
+                "h-full py-3 w-full bg-gray-800 object-contain hover:blur-[2px] hover:opacity-95 ease-in-out transition duration-200",
                 imageClassName
               )}
               width="1000"
