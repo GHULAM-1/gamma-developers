@@ -21,8 +21,8 @@ export default function WhoWeAre() {
         </div>
       </div>
 
-      <TestimonialCarousel/>
-      <SparklesPreview/>
+      
+     
 
     </>
   )
