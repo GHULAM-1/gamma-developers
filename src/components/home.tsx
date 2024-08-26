@@ -8,7 +8,7 @@ import AllServices from '@/app/allService/page'
 export default function Home() {
   return (
     <>   
-      <Hero/>
+      <Hero />
       <DirectionAwareHoverDemo/>
       <AllServices/>
       <AllBlogs/>

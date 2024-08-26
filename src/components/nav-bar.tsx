@@ -1,108 +1,50 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { Equal, X } from "lucide-react";
-import { ShimmerButtonDemo } from "./shimmer-button";
-import { FadeText } from "./magicui/fade-text";
+import React from "react";
+import { usePathname } from "next/navigation";
 import Logo from "./logo";
-import Button from "./navbar-navigation";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { MoveUpRight } from "lucide-react";
 
 export default function NavBar() {
-  const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
-  const router = useRouter();
+  const pathname = usePathname();
 
-  useEffect(() => {
-    if (isNavOpen) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
-    return () => {
-      document.body.classList.remove("no-scroll");
-    };
-  }, [isNavOpen]);
-
-  const handleNavigation = (url: any) => {
-    setIsNavOpen(false);
-    router.push(url);
-  };
-
-  const navLinksClassName = "text-[65px] text-white font-black";
+  const tabs = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Blog", path: "/blog" },
+    { name: "Portfolio", path: "/portfolio" },
+  ];
 
   return (
-    <>
-      <nav className="hidden lg:flex justify-between items-center">
-        <div className="flex items-center gap-6">
-          <Logo />
-          <Button />
-        </div>
-        <ShimmerButtonDemo />
-      </nav>
-      <div className="flex text-white w-full items-center justify-between h-[12vh] lg:hidden">
-        <div
-          className="img cursor-pointer"
-          onClick={() => handleNavigation("/")}
-        >
-          <Logo/>
-        </div>
-        <div className="flex gap-8">
-          <div
-            className="cursor-pointer"
-            onClick={() => setIsNavOpen(!isNavOpen)}
-          >
-            Menu
+    <div className=" w-full  flex justify-center items-center fixed top-0  left-0 right-0 z-50 backdrop-blur-md bg-opacity-70 bg-black ">
+      <div className="w-full max-w-[1340px] mx-auto flex text-white justify-between items-center py-2">
+        <div className="flex gap-2">
+          <div className="mt-3">
+            <Logo />
           </div>
-          <Equal
-            className={`${!isNavOpen ? "flex" : "hidden"} cursor-pointer`}
-            onClick={() => setIsNavOpen(!isNavOpen)}
-          />
-          <X
-            className={`${isNavOpen ? "flex" : "hidden"} cursor-pointer`}
-            onClick={() => setIsNavOpen(!isNavOpen)}
-          />
+          <div className="flex gap-2 text-sm rounded-lg justify-center items-center">
+            <div className="border-[0.5px] border-[#FFFFFF5A] flex justify-center items-center rounded-3xl text-sm px-1">
+              {tabs.map((tab) => (
+                <a
+                  href={tab.path}
+                  key={tab.name}
+                  className={`px-5 py-[5px] my-[2.5px] rounded-3xl cursor-pointer transition-all ease-linear ${
+                    pathname === tab.path ? "bg-[#FFFFFF2A]" : ""
+                  }`}
+                >
+                  {tab.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="flex justify-center items-center rounded-3xl bg-white text-black px-5 py-[7px] text-sm gap-2 cursor-pointer">
+            <span>Start Project</span>
+            <MoveUpRight className="w-[18px] h-[18px]" />
+          </div>
         </div>
       </div>
-
-      <div
-        className={`${
-          isNavOpen ? "flex" : "hidden"
-        } md:hidden h-[88vh] mb-4 w-full items-center gap-5 flex-col`}
-      >
-        <div onClick={() => handleNavigation("/")} className="cursor-pointer">
-          <FadeText
-            className={`${navLinksClassName}`}
-            direction="up"
-            framerProps={{
-              show: { transition: { delay: 0.2 } },
-            }}
-            text="Home"
-          />
-        </div>
-        <div
-          onClick={() => handleNavigation("/portfolio")}
-          className={`${navLinksClassName} cursor-pointer`}
-        >
-          Portolio
-        </div>
-        <div
-          onClick={() => handleNavigation("/allService")}
-          className={`${navLinksClassName} cursor-pointer`}
-        >
-          Services
-        </div>
-        <div
-          onClick={() => handleNavigation("/services")}
-          className={`${navLinksClassName} cursor-pointer`}
-        >
-          About
-        </div>
-        <div
-          onClick={() => handleNavigation("/portfolio")}
-          className={`${navLinksClassName} cursor-pointer`}
-        >
-          Blogs
-        </div>
-      </div>
-    </>
+    </div>
   );
 }
