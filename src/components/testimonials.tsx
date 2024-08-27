@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { testimonialsData } from "@/data/testimonials-data";
+import { testimonialsData } from "@/data/testimonilas-data";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useEffect, useState } from "react";
 

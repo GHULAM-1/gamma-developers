@@ -4,7 +4,7 @@ import { ServicesType } from "@/types/all-types";
 import { Services } from "@/data/all-service-data";
 import { ArrowUpRight } from "lucide-react";
 
-export default function AllServices() {
+export default function ServicesSec() {
   return (
     <>
       <div className="mb-20 w-full rounded-2xl bg-white flex flex-col justify-center items-center text-black max-w py-[140px]">
