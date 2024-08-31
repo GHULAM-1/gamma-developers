@@ -5,7 +5,7 @@ const nextConfig = {
       typedRoutes:true,
     },
       images: {
-        domains: ['images.unsplash.com'],
+        domains: ['images.unsplash.com' , 'uithemez.com'],
       },
     };
     
