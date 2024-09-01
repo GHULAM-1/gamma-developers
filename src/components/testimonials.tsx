@@ -19,12 +19,12 @@ export function TestimonialCarousel() {
   }, []);
 
   return (
-    <div className="flex bg-black items-center justify-between">
+    <div className="flex items-center justify-between">
       <div className=" mb-9 w-[60%]">
         <img src="/testimonials-img.png" alt="" />
       </div>
 
-      <div className="transition-all ease-linear w-full flex justify-center items-center bg-black text-white ">
+      <div className="transition-all ease-linear w-full flex justify-center items-center bg-background text-white ">
         <div className="w-full p-8 rounded shadow-lg">
           <p className="italic text-3xl ">
             "{testimonialsData[currentIndex].message}"
@@ -43,7 +43,7 @@ export function TestimonialCarousel() {
               </div>
             </div>
             <svg
-              className="w-12 h-12 bg-primary text-neutral-700 opacity-80"
+              className="w-12 h-12 text-neutral-700 opacity-80"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
