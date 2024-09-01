@@ -1,6 +1,7 @@
 import { ServicesType } from "@/types/all-types";
 
 const Service1: ServicesType = {
+    serviceSlug:"web-development" ,
     serviceName: "Web Development",
     hoverText1: "Heavy",
     hoverText2: "Machine",
@@ -11,6 +12,7 @@ const Service1: ServicesType = {
 };
 
 const Service2: ServicesType = {
+    serviceSlug:"app-development" ,
     serviceName: "App Development",
     hoverText1: "Heavy",
     hoverText2: "Machine",
@@ -21,6 +23,7 @@ const Service2: ServicesType = {
 };
 
 const Service3: ServicesType = {
+    serviceSlug:"ui-ux-design" ,
     serviceName: "UI/UX Design",
     hoverText1: "Heavy",
     hoverText2: "Machine",

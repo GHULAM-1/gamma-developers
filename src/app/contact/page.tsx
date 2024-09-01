@@ -1,5 +1,7 @@
 import React from "react";
 import { MoveUpRight } from "lucide-react";
+import { CardSpotlight } from "@/components/ui/card-spotlight";
+import { CardSpotlightDemo } from "@/components/card-spotlight-demo";
 
 export default function Contact() {
   const footerNavs = [
@@ -110,6 +112,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      <CardSpotlightDemo />
     </div>
   );
 }

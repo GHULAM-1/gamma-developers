@@ -11,6 +11,7 @@ export type PortfolioCardType = {
   id?: number;
 };
 export type ServicesType = {
+  serviceSlug: string;
   serviceName: string;
   hoverText1?: string;
   hoverText2?: string;
@@ -23,7 +24,14 @@ export type BlogType = {
   image: string;
   mainText: string;
   ownerName: string;
-  ownerImage:string
+  ownerImage: string;
   date: string;
   timeToRead: string;
+};
+
+export type StackType = {
+  name: string;
+  image: string;
+  brandColor: string;
+  colors: number[];
 };

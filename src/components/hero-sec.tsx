@@ -1,4 +1,5 @@
 import React from "react";
+import { CardSpotlight } from "./ui/card-spotlight";
 export default function Hero() {
   return (
     <>

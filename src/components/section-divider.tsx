@@ -4,9 +4,11 @@ import { cn } from "@/lib/utils";
 
 type SectionDividerProps = React.HTMLAttributes<HTMLDivElement> & {
   text: string;
+  isViewMore?: boolean;
 };
 
 export default function SectionDivider({
+  isViewMore = true,
   text,
   className,
   ...props
@@ -23,15 +25,17 @@ export default function SectionDivider({
         <CornerDownRight size={38} />
         <div className="text-[36px]">{text}</div>
       </div>
-      <div>
-        <a
-          href="/portfolio"
-          className="hover:bg-white border-neutral-400 border-opacity-25 border-[1px]  hover:text-black transition-all ease-linear text-sm flex justify-center items-center rounded-3xl px-[25px] py-[12px] cursor-pointer"
-        >
-          <span>View More</span>
-          <ArrowUpRight size={18} />
-        </a>
-      </div>
+      {isViewMore && (
+        <div>
+          <a
+            href="/portfolio"
+            className="hover:bg-white border-neutral-400 border-opacity-25 border-[1px]  hover:text-black transition-all ease-linear text-sm flex justify-center items-center rounded-3xl px-[25px] py-[12px] cursor-pointer"
+          >
+            <span>View More</span>
+            <ArrowUpRight size={18} />
+          </a>
+        </div>
+      )}
     </div>
   );
 }
