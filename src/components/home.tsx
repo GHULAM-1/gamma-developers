@@ -12,9 +12,8 @@ export default function Home() {
       <Hero />
       <DirectionAwareHoverDemo />
       <ServicesSec />
+      <TestimonialCarousel />
       <BlogSec />
-      {/* <Footer /> */}
-      {/* <TestimonialCarousel /> */}
     </>
   );
 }
