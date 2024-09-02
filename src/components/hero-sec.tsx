@@ -1,15 +1,8 @@
-<<<<<<< HEAD
 import React from "react";
 import { CardSpotlight } from "./ui/card-spotlight";
-=======
-import React from 'react'
-import { BackgroundBoxesDemo } from './background-grid'
-
->>>>>>> abubakar
 export default function Hero() {
   return (
     <>
-<<<<<<< HEAD
       <div className="max-w-[1365px] text-white leading-[165px] w-full h-screen justify-center   flex flex-col  tracking-tighter">
         <div className="flex  items-center gap-[100px]">
           <div className=" font-bold text-[9.0vw]">SHAPING</div>
@@ -23,9 +16,6 @@ export default function Hero() {
           <span className="text-[#FFFFFF8A]">POWERFUL HTML Template</span>
         </div>
       </div>
-=======
-        <BackgroundBoxesDemo/>
->>>>>>> abubakar
     </>
   );
 }
