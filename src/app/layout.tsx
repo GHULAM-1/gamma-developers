@@ -20,6 +20,7 @@ export default function RootLayout({
     <html
       lang="en"
       className="flex justify-center overflow-x-hidden items-center w-full  "
+      suppressHydrationWarning
     >
       <body
         className={`${inter.className}  w-full overflow-x-hidden bg-black p-7 flex flex-col justify-center items-center`}
