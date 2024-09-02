@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en" className="flex justify-center items-center w-full  ">
       <body className={`${inter.className} max-w-[1440px] w-full bg-black p-7`}>
         
+        <div className="hidden md:relative">
         <NavBar/>
+        </div>
         {children}
         <Footer/>
       </body>

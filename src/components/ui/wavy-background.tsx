@@ -112,10 +112,10 @@ export const WavyBackground = ({
   return (
     <div
       className={cn(
-        "h-screen mt-[18%] flex flex-col items-center justify-center",
+        "h-[20vh] md:h-[56vh] mt-[35%] md:mt-[18%] flex flex-col items-center justify-center",
         containerClassName
       )}
-      style={{ height: '56vh' }}
+      
     >
       <canvas
         className="absolute "
