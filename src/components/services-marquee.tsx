@@ -11,7 +11,7 @@ export default function ServicesMarquee({
       <div className="w-full flex justify-center ">
         <Marquee pauseOnHover className="[--duration:20s]">
           {content.map((item) => (
-            <div className="text-white text-[150px] font-bold" key={nanoid()}>
+            <div className="text-white text-[80px] md:text-[150px] font-bold" key={nanoid()}>
               {item}{" "}
             </div>
           ))}

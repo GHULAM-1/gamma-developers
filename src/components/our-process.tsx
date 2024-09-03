@@ -18,16 +18,16 @@ export default function OurProcess({
     | undefined;
 }) {
   return (
-    <div className="bg-white flex flex-row w-full  rounded-3xl justify-between items-start p-20">
+    <div className="bg-white flex flex-col md:flex-row w-full  rounded-3xl justify-between items-start p-8 md:p-20">
       <div className="w-50% flex  flex-col">
-        <div className="text-[50px] font-[500] mb-32">Process</div>
+        <div className="text-[39px] md:text-[50px] font-[500] mb-16 md:mb-32">Process</div>
         <img
           src="https://uithemez.com/i/hubfolio_HTML/creative_agency/assets/imgs/process.svg"
           alt=""
         />
       </div>
-      <div className="flex flex-col w-[50%]">
-        <div className="text-[16px] mb-32 pt-4">
+      <div className="flex flex-col w-full mt-5 md:mt-0 md:w-[50%]">
+        <div className="text-[16px] mb-20 md:mb-32 pt-4">
           Business challenges are tough, but we have a proven record of
           elevating our partners to their next and best selves.
         </div>

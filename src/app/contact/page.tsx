@@ -19,8 +19,8 @@ export default function Contact() {
     },
   ];
   return (
-    <div className="p-4 text-white max-w-[1365px] flex justify-center items-center flex-col">
-      <div className="text-center text-[120px] text-white mt-20 font-bold mb-8">
+    <div className="p-4 text-white max-w-[1365px] w-full flex justify-center items-center flex-col">
+      <div className="text-center text-[48px] md:text-[120px] text-white mt-20 font-bold mb-8">
         GET IN TOUCH
       </div>
       <div className="flex justify-center w-screen">
@@ -32,19 +32,19 @@ export default function Contact() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div className="flex w-full justify-between items-start py-[140px] ">
+      <div className="flex flex-col md:flex-row  max-w-[1365px] w-full justify-between gap-14 py-[140px] ">
         <div className="flex flex-col gap-5">
           <div className="leading-[1.125]">
-            <div className="text-[48px] font-semibold">LET'S MAKE YOUR</div>
-            <div className="text-[48px] font-semibold">
+            <div className="text-[38px] md:text-[48px] font-semibold">LET'S MAKE YOUR</div>
+            <div className="text-[38px] md:text-[48px] font-semibold">
               BRAND <span className="font-[300]">BRILLIANT!</span>
             </div>
           </div>
-          <div className="w-[520px] text-neutral-400 mb-[20px]">
+          <div className="w-[350px] md:w-[520px] text-neutral-400 mb-[20px]">
             If you would like to work with us or just want to get in touch, we’d
             love to hear from you!
           </div>
-          <div className="flex gap-8 ">
+          <div className="flex flex-col md:flex-row gap-8 ">
             <div>
               <div className="text-[22px] mb-[15px]">Address</div>
               <div className="w-[242px] text-[16px] text-neutral-400">
@@ -59,7 +59,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="text-[30px] text-primary underline mt-[10px] mb-[30px]">
-            03074593601
+            +92 (074) 593601
           </div>
           <div className="flex gap-14">
             {footerNavs.map((nav) => {
@@ -75,12 +75,12 @@ export default function Contact() {
           </div>
         </div>
         <div>
-          <div className="flex justify-start items-center gap-4">
+          <div className="flex  justify-start items-center gap-4">
             <div className="w-[10px] h-[10px] bg-white  rounded-full flex justify-center items-center"></div>
             <div className="text-[18px]">Send a Mesaage</div>
           </div>
           <div className="flex flex-col">
-            <div className="flex mt-16 gap-10 mb-10">
+            <div className="flex flex-col md:flex-row mt-16 gap-10 mb-10">
               <input
                 type="name"
                 className="text-neutral-400 bg-black  outline-none border-b-[1px] placeholder-neutral-400 border-neutral-400 border-opacity-30 text-[20px] pb-4"
@@ -112,8 +112,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-
-      <CardSpotlightDemo />
     </div>
   );
 }

@@ -5,19 +5,19 @@ const teamMembers: ourTeamTypes[] = [
   {
     img: "gamma.png",
     name: "Ghulam",
-    designation: "Software Engineer",
+    designation: "Co Founder",
     icons: [<LinkedinIcon />, <InstagramIcon /> , <GithubIcon/>], 
   },
   {
     img: "abubakar.png",
     name: "M.Abubakar",
-    designation: "Product Manager",
+    designation: "Co Founder",
     icons: [<LinkedinIcon />, <GithubIcon />, <InstagramIcon />], 
   },
   {
     img: "ibrahim.png",
     name: "M.Ibrahim",
-    designation: "UI/UX Designer",
+    designation: "Co Founder",
     icons: [<InstagramIcon />, <GithubIcon /> ,<LinkedinIcon />,], 
   },
 ];
