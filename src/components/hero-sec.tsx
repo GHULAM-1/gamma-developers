@@ -33,10 +33,10 @@ export default function Hero() {
   ];
 
   return (
-    <div className="max-w-[1365px] text-white w-full h-screen gap-5 justify-center flex flex-row tracking-tighter items-center">
-      <div className="flex flex-col leading-[1.25] mr-10">
+    <div className="text-white w-full mt-16 gap-5 justify-center flex mb-16 lg:flex-row flex-col tracking-tighter items-start lg:items-center">
+      <div className="flex flex-col leading-[1.25] mr-10 w-[50%]">
         <p
-          className={`text-[100px] ${
+          className={`text-[50px] sm:text-[70px] md:text-[100px] ${
             hoveredIndex === 0 ? "text-white" : "text-gray-400"
           }`}
           onMouseEnter={() => handleMouseEnter(0)}
@@ -44,7 +44,7 @@ export default function Hero() {
           Design
         </p>
         <p
-          className={`text-[100px] ${
+          className={`text-[50px] sm:text-[70px] md:text-[100px] ${
             hoveredIndex === 1 ? "text-white" : "text-gray-400"
           }`}
           onMouseEnter={() => handleMouseEnter(1)}
@@ -52,7 +52,7 @@ export default function Hero() {
           Deployment
         </p>
         <p
-          className={`text-[100px] ${
+          className={`text-[50px] sm:text-[70px] md:text-[100px] ${
             hoveredIndex === 2 ? "text-white" : "text-gray-400"
           }`}
           onMouseEnter={() => handleMouseEnter(2)}
@@ -60,12 +60,12 @@ export default function Hero() {
           Growth
         </p>
       </div>
-      <div className="flex flex-col w-[40%] items-right ml-10">
-        <div className="relative w-full h-[230px] rounded">
+      <div className="flex flex-col w-[100%] md:w-[70%] h-auto lg:w-[50%] items-right ml-0 lg:ml-10">
+        <div className="relative w-full h-[230px] rounded overflow-hidden">
           <img
             src="/heroImage.jpg"
             alt=""
-            className={`absolute top-0 left-0 w-full object-contain rounded-xl  transform transition-all duration-300 ease-in-out ${
+            className={`absolute top-0 left-0 w-full h-full object-cover rounded-xl transform transition-all duration-300 ease-in-out ${
               hoveredIndex === 0
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"
@@ -74,7 +74,7 @@ export default function Hero() {
           <img
             src="/heroImage2.jpg"
             alt=""
-            className={`absolute top-0 left-0 w-full object-contain rounded-xl transform transition-all duration-300 ease-in-out ${
+            className={`absolute top-0 left-0 w-full h-full object-cover rounded-xl transform transition-all duration-300 ease-in-out ${
               hoveredIndex === 1
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"
@@ -83,15 +83,15 @@ export default function Hero() {
           <img
             src="/heroImage3.jpg"
             alt=""
-            className={`absolute top-0 left-0 w-full object-contain rounded-xl transform transition-all duration-300 ease-in-out ${
+            className={`absolute top-0 left-0 w-full h-full object-cover rounded-xl transform transition-all duration-300 ease-in-out ${
               hoveredIndex === 2
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"
             }`}
           />
         </div>
-        <div className="flex justify-between">
-          <ul className="text-sm text-left w-1/2">
+        <div className="flex justify-between mt-0 sm:mt-10 lg:mt-0">
+          <ul className="text-[12px] sm:text-sm text-left w-1/2">
             {descriptions[hoveredIndex]
               .slice(0, Math.ceil(descriptions[hoveredIndex].length / 2))
               .map((text, index) => (
@@ -100,7 +100,7 @@ export default function Hero() {
                 </li>
               ))}
           </ul>
-          <ul className="text-sm text-left w-1/2">
+          <ul className="text-[12px] sm:text-sm text-left w-1/2">
             {descriptions[hoveredIndex]
               .slice(Math.ceil(descriptions[hoveredIndex].length / 2))
               .map((text, index) => (
