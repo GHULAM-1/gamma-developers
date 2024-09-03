@@ -3,6 +3,7 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { StackType } from "@/types/all-types";
+import Marquee from "./magicui/marquee";
 
 export default function Stack({ data }: { data: StackType[] | undefined }) {
   return (
@@ -44,6 +45,7 @@ const Card = ({
 }) => {
   const [hovered, setHovered] = React.useState(true);
   return (
+
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(true)}

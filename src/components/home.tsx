@@ -8,16 +8,23 @@ import { TestimonialCarousel } from "./testimonials";
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
 import StackSec from "./stack-sec";
-import Marquee from "./magicui/marquee";
+import DevelopmentCycle from "./development-cycle";
+import StackMob from "./stack-mob";
+
 export default function Home() {
   return (
     <>
       <Hero />
       <DirectionAwareHoverDemo />
+      <DevelopmentCycle />
       <ServicesSec />
-
-      <StackSec />
-
+      {/* Conditional rendering based on screen size */}
+      <div className="block lg:hidden">
+        <StackMob />
+      </div>
+      <div className="hidden lg:block">
+        <StackSec />
+      </div>
       <BlogSec />
       <TestimonialCarousel />
     </>

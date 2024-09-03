@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import React from "react";
 export type testimonialsTypes = {
   message: string;
@@ -41,21 +42,19 @@ export type portfolioPageDataType = {
   title: string;
   desc: string;
   image: string;
-  tags: string[];
-  purpose: string;
-  pinDetails: {
-    title: string;
-    value: string;
-  }[];
-  bigImage: string;
-  ladderData: {
-    title: string;
-    desc: string;
-    image: string;
-    points: {
-      heading: string;
-      explanation: string;
-    }[];
-  }[];
-  portfolioStackData: StackType[];
+  tags: string[];
 };
+
+
+  export type ourTeamTypes = {
+     img: string;
+    name: string;
+    designation: string;
+    icons:JSX.Element[];
+  };
+  export type processTypes = {
+    image:string;
+    number: string;
+    title: string;
+    description: string;
+  };
