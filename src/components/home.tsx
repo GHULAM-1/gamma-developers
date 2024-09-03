@@ -8,13 +8,16 @@ import { TestimonialCarousel } from "./testimonials";
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
 import StackSec from "./stack-sec";
+import Marquee from "./magicui/marquee";
 export default function Home() {
   return (
     <>
       <Hero />
       <DirectionAwareHoverDemo />
       <ServicesSec />
+
       <StackSec />
+
       <BlogSec />
       <TestimonialCarousel />
     </>

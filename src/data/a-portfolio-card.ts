@@ -12,7 +12,7 @@ const PortfolioCard2 : PortfolioCardType = {
 
 }
 const PortfolioCard3 : PortfolioCardType = {
-    id:3,
+id:3,
     name: "bitprowler",
     image: "/collages/bitProwler.png",
 }

@@ -42,4 +42,20 @@ export type portfolioPageDataType = {
   desc: string;
   image: string;
   tags: string[];
+  purpose: string;
+  pinDetails: {
+    title: string;
+    value: string;
+  }[];
+  bigImage: string;
+  ladderData: {
+    title: string;
+    desc: string;
+    image: string;
+    points: {
+      heading: string;
+      explanation: string;
+    }[];
+  }[];
+  portfolioStackData: StackType[];
 };

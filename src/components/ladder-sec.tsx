@@ -9,17 +9,15 @@ export default function LadderSec({
         title: string;
         desc: string;
         image: string;
-        slug: string;
       }[]
     | undefined;
 }) {
   return (
-    <div key={nanoid()} className="space-y-10 mb-32">
+    <div key={nanoid()} className="space-y-10 mb-32 text-white">
       {data?.map((item, index) => {
         const isEven = index % 2 !== 0;
         return (
-          <a
-            href={`/portfolio/${item?.slug}`}
+          <div
             key={nanoid()}
             className={`flex mb-28 flex-col md:flex-row ${
               isEven ? "md:flex-row-reverse" : ""
@@ -40,7 +38,7 @@ export default function LadderSec({
                 {item.desc}
               </p>
             </div>
-          </a>
+          </div>
         );
       })}
     </div>

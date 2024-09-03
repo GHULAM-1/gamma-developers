@@ -1,7 +1,6 @@
 "use client";
 import PageHeading from "@/components/page-heading";
 import SectionDivider from "@/components/section-divider";
-import LadderSec from "@/components/ladder-sec";
 import { portfolioPageData } from "@/data/portfolio-page-data";
 import PortfolioCard from "@/components/portfolio-card";
 export default function PortfolioPage() {
@@ -12,9 +11,11 @@ export default function PortfolioPage() {
           description="Crafting new bright brands, unique visual systems and digital experience focused on a wide range of original collabs."
           heading="We are a digital agency for visually compelling about stories Hubfolio."
         />
-        <SectionDivider text="Our Portfolio" isViewMore={false} />
+        <div className="mt-14 w-full">
+          <SectionDivider text="Our Portfolio" isViewMore={false} />
+        </div>
 
-        <div className="flex w-full ">
+        <div className="flex w-full gap-x-14 gap-y-24 flex-wrap justify-between items-start mb-[200px] ">
           {portfolioPageData?.map((item) => (
             <PortfolioCard
               key={item.slug}
