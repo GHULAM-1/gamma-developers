@@ -1,16 +1,17 @@
-"use client";
-import React from "react";
-import { WavyBackground } from "./ui/wavy-background";
+import React from 'react';
 
-export function WavyBackgroundDemo() {
+export default function AboutUsHero() {
   return (
-    <WavyBackground  className="  pb-40 ">
-      <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center mt-9">
-        Hero waves are cool
-      </p>
-      <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
-        Leverage the power of canvas to create a beautiful hero section
-      </p>
-    </WavyBackground>
+    <div className="bg-black  text-white py-14 md:py-32 flex justify-between items-center px-1">
+    
+      <div className="w-full">
+        <div className="text-[43px] md:text-[60px]  w-full  tracking-tighter font-[400] mb-6">
+          Expert web designers & web developers trained in the digital industry.
+        </div>
+        <p className="text-[15px] md:text-[18px] text-[#919191] w-full md:w-[60%] leading-relaxed ml-auto">
+          Crafting a virtual presence that stands out in the bustling online space requires not only technical skill but a flair for the unique feel each brand holds. With a unique view, she crafts projects.
+        </p>
+      </div>
+    </div>
   );
 }

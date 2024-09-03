@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/nav-bar";
 import Footer from "@/components/footer";
+import Ham from "@/components/ham";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,12 +20,20 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="flex justify-center overflow-x-hidden items-center w-full  "
+      className="flex justify-center overflow-x-hidden items-center w-full"
     >
       <body
-        className={`${inter.className}  w-full overflow-x-hidden bg-black p-7 flex flex-col justify-center items-center`}
+        className={`${inter.className} w-full overflow-x-hidden bg-black p-7 flex flex-col justify-center items-center`}
       >
-        <NavBar />
+        {/* Show NavBar on screens larger than md and hide Ham */}
+        <div className="hidden md:flex w-full">
+          <NavBar />
+        </div>
+        
+        {/* Show Ham on screens smaller than md and hide NavBar */}
+        <div className="flex md:hidden w-full">
+          <Ham />
+        </div>
 
         {children}
         <Footer />

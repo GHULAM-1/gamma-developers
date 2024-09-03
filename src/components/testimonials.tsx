@@ -17,14 +17,14 @@ export function TestimonialCarousel() {
   }, []);
 
   return (
-    <div className="flex rounded-2xl items-center mt-10 mb-40 py-[100px]  justify-between bg-[#1A1B1E]">
-      <div className=" mb-9 w-[60%]">
+    <div className="flex rounded-2xl items-center mt-36  mb-12   justify-between bg-[#1A1B1E] ">
+      <div className="md:block hidden mb-9 w-[60%]">
         <img src="/testimonials-img.png" alt="" />
       </div>
 
       <div className="transition-all ease-linear w-full flex max-w-[1365px]  justify-center items-center  text-white ">
         <div className="w-full p-8 rounded ">
-          <p className=" text-[36px] tracking-tighter pb-10 border-b-[1px] border-neutral-400 border-opacity-25">
+          <p className="text-[24px] md:text-[36px] tracking-tighter pb-10 border-b-[1px] border-neutral-400 border-opacity-25">
             "{testimonialsData[currentIndex].message}"
           </p>
           <div className="flex justify-between items-center">
