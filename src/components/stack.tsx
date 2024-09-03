@@ -3,11 +3,12 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { StackType } from "@/types/all-types";
+import Marquee from "./magicui/marquee";
 
 export default function Stack({ data }: { data: StackType[] | undefined }) {
   return (
     <>
-      <div className=" grid grid-cols-5 lg:flex-row items-center justify-center gap-y-10 bg-black dark:bg-black w-full">
+      <div className=" grid grid-cols-4 lg:flex-row items-center justify-center gap-y-10 bg-black dark:bg-black w-full">
         {data?.map((stack: StackType) => {
           return (
             <Card
@@ -44,6 +45,7 @@ const Card = ({
 }) => {
   const [hovered, setHovered] = React.useState(true);
   return (
+
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(true)}

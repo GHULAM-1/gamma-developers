@@ -7,7 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 export default function ServicesSec() {
   return (
     <>
-      <div className="mb-44 w-full rounded-2xl  bg-white flex flex-col justify-center items-center text-black max-w py-[140px]">
+      <div className="mb-44 w-full mt-[140px]  rounded-2xl  bg-white flex flex-col justify-center items-center text-black max-w py-[140px]">
         {/* <SectionDivider className="text-black" text="Our Services" /> */}
         <div className="border-b p-5 w-[90%]">
           <div className="flex  w-full justify-satrt items-center gap-2 pl-2">

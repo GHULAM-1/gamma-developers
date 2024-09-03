@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+import { JSX } from "react";
 import React from "react";
 export type testimonialsTypes = {
   message: string;
@@ -36,15 +36,15 @@ export type StackType = {
   brandColor: string;
   colors: number[];
 };
-=======
-import { JSX } from "react";
 
-export type testimonialsTypes = {
-    message: string;
-    img: string;
-    name: string;
-    designation: string;
-  };
+export type portfolioPageDataType = {
+  slug: string;
+  title: string;
+  desc: string;
+  image: string;
+  tags: string[];
+};
+
 
   export type ourTeamTypes = {
      img: string;
@@ -52,4 +52,9 @@ export type testimonialsTypes = {
     designation: string;
     icons:JSX.Element[];
   };
->>>>>>> abubakar
+  export type processTypes = {
+    image:string;
+    number: string;
+    title: string;
+    description: string;
+  };

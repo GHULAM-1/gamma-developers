@@ -7,13 +7,6 @@ export const homePageStackData: StackType[] = [
     brandColor: "#FF9900",
     colors: [255, 153, 0],
   },
-
-  {
-    name: "REACT",
-    image: "/stack-icons/react-color.svg",
-    brandColor: "#61DAFB",
-    colors: [97, 218, 251],
-  },
   {
     name: "NEXTJS",
     image: "/stack-icons/nextjs-color.svg",
@@ -31,6 +24,20 @@ export const homePageStackData: StackType[] = [
     image: "/stack-icons/figma-color.svg",
     brandColor: "#F24E1E",
     colors: [242, 78, 30],
+  },
+
+  {
+    name: "TENSORFLOW",
+    image: "/stack-icons/tensorflow-color.svg",
+    brandColor: "#FF6F00",
+    colors: [255, 111, 0],
+  },
+
+  {
+    name: "OPENAI",
+    image: "/stack-icons/openai-color.svg",
+    brandColor: "#412991",
+    colors: [65, 41, 145],
   },
   {
     name: "TYPESCRIPT",
@@ -53,12 +60,12 @@ export const homePageStackData: StackType[] = [
     colors: [6, 182, 212],
   },
 
-  //   {
-  //     name: "JEST",
-  //     image: "/stack-icons/jest-color.svg",
-  //     brandColor: "#C21325",
-  //     colors: [194, 19, 37],
-  //   },
+  // {
+  //   name: "JEST",
+  //   image: "/stack-icons/jest-color.svg",
+  //   brandColor: "#C21325",
+  //   colors: [194, 19, 37],
+  // },
 
   {
     name: "SWIFT",
@@ -74,32 +81,18 @@ export const homePageStackData: StackType[] = [
   },
 
   {
-    name: "OPENAI",
-    image: "/stack-icons/openai-color.svg",
-    brandColor: "#412991",
-    colors: [65, 41, 145],
+    name: "PHP",
+    image: "/stack-icons/php-color.svg",
+    brandColor: "#777BB4",
+    colors: [119, 123, 180],
   },
 
-  //   {
-  //     name: "PHP",
-  //     image: "/stack-icons/php-color.svg",
-  //     brandColor: "#777BB4",
-  //     colors: [119, 123, 180],
-  //   },
-
-  {
-    name: "TENSORFLOW",
-    image: "/stack-icons/tensorflow-color.svg",
-    brandColor: "#FF6F00",
-    colors: [255, 111, 0],
-  },
-
-  {
-    name: "LARAVEL",
-    image: "/stack-icons/laravel-color.svg",
-    brandColor: "#FF2D20",
-    colors: [255, 111, 0],
-  },
+  // {
+  //   name: "LARAVEL",
+  //   image: "/stack-icons/laravel-color.svg",
+  //   brandColor: "#FF2D20",
+  //   colors: [255, 111, 0],
+  // },
 
   {
     name: "PYTHON",
@@ -115,10 +108,17 @@ export const homePageStackData: StackType[] = [
     colors: [197, 247, 79],
   },
 
-  //   {
-  //     name: "DJANGO",
-  //     image: "/stack-icons/django-color.svg",
-  //     brandColor: "#092E20",
-  //     colors: [9, 46, 32],
-  //   },
+  // {
+  //   name: "DJANGO",
+  //   image: "/stack-icons/django-color.svg",
+  //   brandColor: "#092E20",
+  //   colors: [9, 46, 32],
+  // },
+
+  {
+    name: "REACT",
+    image: "/stack-icons/react-color.svg",
+    brandColor: "#61DAFB",
+    colors: [97, 218, 251],
+  },
 ];
