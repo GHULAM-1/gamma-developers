@@ -16,7 +16,7 @@ export default function SectionDivider({
   return (
     <div
       className={cn(
-        `w-full text-white flex justify-between items-center border-b-[1px] border-neutral-400 border-opacity-20 pb-[30px] mb-[80px]`,
+        `w-full text-white flex  md:justify-between items-center border-b-[1px] border-neutral-400 border-opacity-20 pb-[30px] mb-0 md:mb-[80px]`,
         className
       )}
       {...props}
