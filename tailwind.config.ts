@@ -24,7 +24,7 @@ const config: Config = {
     },
     extend: {
       animation: {
-        spotlight: "spotlight 2s ease .75s 1 forwards",
+        spotlight: "spotlight 2s ease .25s 1 forwards",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         marquee: "marquee var(--duration) linear infinite",
