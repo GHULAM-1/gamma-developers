@@ -21,8 +21,8 @@ export default function SectionDivider({
       )}
       {...props}
     >
-      <div className="flex justify-center items-center gap-2">
-        <CornerDownRight size={38} />
+      <div className=" justify-center items-center gap-2 flex">
+        <CornerDownRight className="hidden md:flex" size={38} />
         <div className="text-[36px]">{text}</div>
       </div>
       {isViewMore && (

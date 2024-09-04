@@ -8,7 +8,7 @@ import Marquee from "./magicui/marquee";
 export default function Stack({ data }: { data: StackType[] | undefined }) {
   return (
     <>
-      <div className=" grid grid-cols-5 lg:flex-row items-center justify-center gap-y-10 bg-black dark:bg-black w-full">
+      <div className=" grid grid-cols-2  md:grid-cols-5 lg:flex-row items-center justify-center gap-y-10 bg-black dark:bg-black w-full">
         {data?.map((stack: StackType) => {
           return (
             <Card
@@ -45,11 +45,10 @@ const Card = ({
 }) => {
   const [hovered, setHovered] = React.useState(true);
   return (
-
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(true)}
-      className="border border-white/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-[15rem] mx-auto p-4 relative h-[10rem] "
+      className="border border-white/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-[8rem] md:w-[15rem] mx-auto p-4 relative md:h-[10rem] h-[8rem] "
     >
       {/* <Icon className="absolute h-6 w-6 -top-3 -left-3 stroke-neutral-400  text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-black stroke-neutral-400" />
@@ -70,7 +69,7 @@ const Card = ({
 
       <div className="relative z-20 group flex justify-center items-center flex-col gap-2">
         <img
-          className={`w-[70px]  fill-white h-[70px] text-red-700`}
+          className={`md:w-[70px] w-[40px]  fill-white h-[70px] text-red-700`}
           src={imageUrl}
         />
         <div style={{ color: brandColor }}>{title}</div>

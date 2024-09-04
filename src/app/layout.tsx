@@ -23,15 +23,15 @@ export default function RootLayout({
       className="flex justify-center overflow-x-hidden items-center w-full"
     >
       <body
-        className={`${inter.className} w-full overflow-x-hidden bg-black p-7 flex flex-col justify-center items-center`}
+        className={`${inter.className} w-full overflow-x-hidden bg-black px-4 py-2 md:p-7 flex flex-col justify-center items-center`}
       >
         {/* Show NavBar on screens larger than md and hide Ham */}
         <div className="hidden md:flex w-full">
           <NavBar />
         </div>
-        
+
         {/* Show Ham on screens smaller than md and hide NavBar */}
-        <div className="flex md:hidden w-full">
+        <div className="flex md:hidden w-full ">
           <Ham />
         </div>
 

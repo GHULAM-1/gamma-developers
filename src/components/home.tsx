@@ -19,12 +19,12 @@ export default function Home() {
       <DevelopmentCycle />
       <ServicesSec />
       {/* Conditional rendering based on screen size */}
-      <div className="block lg:hidden">
-        <StackMob />
-      </div>
-      <div className="hidden lg:block">
-        <StackSec />
-      </div>
+      {/* <div className="block lg:hidden">
+        <StackMob  />
+      </div> */}
+      {/* <div className="hidden lg:block"> */}
+      <StackSec />
+      {/* </div> */}
       <BlogSec />
       <TestimonialCarousel />
     </>

@@ -44,11 +44,35 @@ export const portfolioPageData: portfolioPageDataType[] = [
     pinDetails: [
       { title: "Client", value: "Ali Khan" },
       { title: "Year", value: "2023" },
-      { title: "Role", value: "UI/UX Designer, Developer" },
-      { title: "Platform", value: "Web, Mobile" },
+      { title: "Role", value: " Developer" },
+      { title: "Platform", value: "Mobile" },
     ],
-    bigImage: "/collages/ali-kan-big.png",
+    bigImage:
+      "https://uithemez.com/i/hubfolio_HTML/inner_pages/assets/imgs/portfolio/project/2.jpg",
     ladderData: [
+      {
+        title: "Design Process",
+        desc: "A detailed overview of the design process, from concept to final product.",
+        image: "/collages/ali-kan.png",
+        points: [
+          {
+            heading: "Research",
+            explanation:
+              "Conducted thorough market research to inform design choices.",
+          },
+          {
+            heading: "Research",
+            explanation:
+              "Conducted thorough market research to inform design choices.",
+          },
+          {
+            heading: "Wireframing",
+            explanation:
+              "Created wireframes to outline the structure and layout.",
+          },
+        ],
+      },
+
       {
         title: "Design Process",
         desc: "A detailed overview of the design process, from concept to final product.",
@@ -114,7 +138,8 @@ export const portfolioPageData: portfolioPageDataType[] = [
       { title: "Role", value: "Lead Developer" },
       { title: "Platform", value: "E-commerce" },
     ],
-    bigImage: "/collages/exclusive-big.png",
+    bigImage:
+      "https://uithemez.com/i/hubfolio_HTML/inner_pages/assets/imgs/portfolio/project/2.jpg",
     ladderData: [
       {
         title: "Development Cycle",
@@ -179,7 +204,8 @@ export const portfolioPageData: portfolioPageDataType[] = [
       { title: "Role", value: "Developer" },
       { title: "Platform", value: "Desktop" },
     ],
-    bigImage: "/collages/custom-computers-big.png",
+    bigImage:
+      "https://uithemez.com/i/hubfolio_HTML/inner_pages/assets/imgs/portfolio/project/2.jpg",
     ladderData: [
       {
         title: "Custom Builds",

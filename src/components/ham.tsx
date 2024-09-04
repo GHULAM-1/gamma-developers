@@ -11,10 +11,10 @@ export default function Nav() {
   useEffect(() => {
     if (isNavOpen) {
       document.body.classList.add("no-scroll");
-      document.body.style.overflow = "hidden"; // Hide vertical scroll
+      document.body.style.overflow = "hidden";
     } else {
       document.body.classList.remove("no-scroll");
-      document.body.style.overflow = ""; // Reset overflow when menu is closed
+      document.body.style.overflow = "";
     }
   }, [isNavOpen]);
 
@@ -23,19 +23,24 @@ export default function Nav() {
     router.push(url);
   };
 
-  const navLinksClassName =
-    "text-4xl md:text-6xl py-4 text-white font-black";
+  const navLinksClassName = "text-4xl md:text-6xl py-4 text-white font-black";
 
   return (
     <>
-      <div className="flex items-center text-white w-full justify-between p-3 h-[12vh]">
-        <div className="img w-[157.72px] cursor-pointer" onClick={() => handleNavigation("/")}>
+      <div className="flex items-center text-white w-full justify-between py-3 h-[12vh] border-b-[1px] border-neutral-400 border-opacity-25 mb-5">
+        <div
+          className="img w-[157.72px] cursor-pointer"
+          onClick={() => handleNavigation("/")}
+        >
           <Logo />
         </div>
         <div className="flex gap-8">
-          <div className="cursor-pointer" onClick={() => setIsNavOpen(!isNavOpen)}>
+          {/* <div
+            className="cursor-pointer"
+            onClick={() => setIsNavOpen(!isNavOpen)}
+          >
             Menu
-          </div>
+          </div> */}
           <Equal
             className={`${!isNavOpen ? "flex" : "hidden"} cursor-pointer`}
             onClick={() => setIsNavOpen(!isNavOpen)}
@@ -56,7 +61,10 @@ export default function Nav() {
           className="absolute top-8 right-8 w-10 h-10 text-white cursor-pointer"
           onClick={() => setIsNavOpen(false)}
         />
-        <div onClick={() => handleNavigation("/")} className={`${navLinksClassName} cursor-pointer`}>
+        <div
+          onClick={() => handleNavigation("/")}
+          className={`${navLinksClassName} cursor-pointer`}
+        >
           Home
         </div>
         <div

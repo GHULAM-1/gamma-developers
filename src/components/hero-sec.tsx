@@ -33,7 +33,7 @@ export default function Hero() {
   ];
 
   return (
-    <div className="text-white w-full mt-16 gap-5 justify-center flex mb-16 lg:flex-row flex-col tracking-tighter items-start lg:items-center">
+    <div className="text-white w-full md:mt-16 gap-5 justify-center flex mb-16 lg:flex-row flex-col tracking-tighter items-start lg:items-center">
       <div className="flex flex-col leading-[1.25] mr-10 w-[50%]">
         <p
           className={`text-[50px] sm:text-[70px] md:text-[100px] ${
