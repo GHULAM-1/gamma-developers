@@ -18,13 +18,7 @@ export default function Home() {
       <DirectionAwareHoverDemo />
       <DevelopmentCycle />
       <ServicesSec />
-      {/* Conditional rendering based on screen size */}
-      {/* <div className="block lg:hidden">
-        <StackMob  />
-      </div> */}
-      {/* <div className="hidden lg:block"> */}
       <StackSec />
-      {/* </div> */}
       <BlogSec />
       <TestimonialCarousel />
     </>
