@@ -17,14 +17,14 @@ export function DirectionAwareHoverDemo() {
               return (
                 <div
                   key={portfolioCard.id}
-                  className="bg-[#1F2022] h-[350px] sm:h-[450px] lg:h-[450px] xl:h-[600px] rounded-2xl p-4 text-white"
+                  className="bg-[#1F2022] w-full sm:h-[450px] lg:h-[450px] xl:h-[600px] rounded-2xl p-4 text-white"
                 >
                   <Image
                     alt="loading ..."
                     width={600}
                     height={450}
                     src={portfolioCard.image}
-                    className="w-full h-[75%] sm:h-[80%] rounded-2xl object-cover"
+                    className="w-full h-[85%] sm:h-[90%] rounded-2xl object-cover"
                   />
                   <div className="flex justify-between w-full items-center mt-4">
                     <div className="flex w-full items-center gap-5 pl-2">
