@@ -2,6 +2,7 @@ import React from "react";
 import { homePageStackData } from "@/data/stack-data";
 import { StackType } from "@/types/all-types";
 import Marquee from "./magicui/marquee";
+import SectionDivider from "./section-divider";
 export default function StackMob({
   data,
 }: {
@@ -10,7 +11,10 @@ export default function StackMob({
   const stacks = data || homePageStackData;
 
   return (
-    <Marquee pauseOnHover className="[--duration:20s]">
+    <div className="max-w-[1365px] w-full">
+      <SectionDivider text="Our Stack" className="" isViewMore={false} />
+
+ <Marquee pauseOnHover className="[--duration:30s]">
 
     <div className="flex mb-44">
       {stacks.map((stack: StackType) => (
@@ -23,5 +27,6 @@ export default function StackMob({
       ))}
     </div>
     </Marquee>
+    </div>
   );
 }

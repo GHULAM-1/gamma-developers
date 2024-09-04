@@ -21,15 +21,15 @@ export default function SectionDivider({
       )}
       {...props}
     >
-      <div className=" justify-center items-center gap-2 flex">
-        <CornerDownRight className="hidden md:flex" size={38} />
-        <div className="text-[36px]">{text}</div>
+      <div className="flex justify-center items-center gap-2">
+        <CornerDownRight size={34} />
+        <div className="text-[20px] sm:text-[30px] md:text-[36px]">{text}</div>
       </div>
       {isViewMore && (
         <div>
           <a
             href="/portfolio"
-            className="hover:bg-white border-neutral-400 border-opacity-25 border-[1px]  hover:text-black transition-all ease-linear text-sm flex justify-center items-center rounded-3xl px-[25px] py-[12px] cursor-pointer"
+            className="hover:bg-white border-neutral-400 border-opacity-25 border-[1px]  hover:text-black transition-all ease-linear text-sm flex justify-center items-center rounded-3xl p-3 sm:px-[25px] sm:py-[12px] cursor-pointer"
           >
             <span>View More</span>
             <ArrowUpRight size={18} />

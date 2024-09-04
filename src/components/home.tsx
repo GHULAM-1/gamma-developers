@@ -10,6 +10,7 @@ import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
 import StackSec from "./stack-sec";
 import DevelopmentCycle from "./development-cycle";
 import StackMob from "./stack-mob";
+import SectionDivider from "./section-divider";
 
 export default function Home() {
   return (
