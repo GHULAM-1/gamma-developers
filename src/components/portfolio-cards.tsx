@@ -16,8 +16,8 @@ export function DirectionAwareHoverDemo() {
             (portfolioCard: PortfolioCardType) => {
               return (
                 <div
-                  key={portfolioCard.id} // Added key prop for React
-                  className="bg-[#1F2022] w-full h-[400px] sm:h-[450px] lg:h-[450px] xl:h-[600px] rounded-2xl p-4 text-white"
+                  key={portfolioCard.id}
+                  className="bg-[#1F2022] h-[350px] sm:h-[450px] lg:h-[450px] xl:h-[600px] rounded-2xl p-4 text-white"
                 >
                   <Image
                     alt="loading ..."
@@ -36,7 +36,7 @@ export function DirectionAwareHoverDemo() {
                     <div>
                       <a
                         href="/portfolio"
-                        className="hover:bg-primary whitespace-nowrap border border-[#FFFFFF5A] hover:text-black transition-all ease-linear text-sm flex justify-center items-center rounded-3xl px-[20px] py-[10px] sm:px-[25px] sm:py-[12px] cursor-pointer"
+                        className="hover:bg-primary whitespace-nowrap border border-[#FFFFFF5A] hover:text-black transition-all ease-linear text-sm flex justify-center items-center rounded-3xl px-[12px] py-[6px] md:px-5 md:py-2 lg:px-[25px] lg:py-[12px] cursor-pointer"
                       >
                         <span>View</span>
                         <ArrowUpRight size={18} />

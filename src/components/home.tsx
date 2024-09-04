@@ -10,6 +10,7 @@ import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
 import StackSec from "./stack-sec";
 import DevelopmentCycle from "./development-cycle";
 import StackMob from "./stack-mob";
+import SectionDivider from "./section-divider";
 
 export default function Home() {
   return (
@@ -18,8 +19,8 @@ export default function Home() {
       <DirectionAwareHoverDemo />
       <DevelopmentCycle />
       <ServicesSec />
-      {/* Conditional rendering based on screen size */}
-      <div className="block lg:hidden">
+      <div className="block lg:hidden max-w-[1365px] w-full">
+
         <StackMob />
       </div>
       <div className="hidden lg:block">
