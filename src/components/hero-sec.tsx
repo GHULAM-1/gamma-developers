@@ -75,7 +75,7 @@ export default function Hero() {
           onMouseEnter={() => handleMouseEnter(1)}
           onMouseLeave={handleMouseLeave}
         >
-          Deployment
+          Deployments
         </p>
         <p
           className={`text-[50px] cursor-pointer sm:text-[70px] md:text-[100px] ${
@@ -84,7 +84,7 @@ export default function Hero() {
           onMouseEnter={() => handleMouseEnter(2)}
           onMouseLeave={handleMouseLeave}
         >
-          Growth
+          Grow
         </p>
       </div>
       <div className="flex flex-col w-[100%] md:w-[70%] h-auto lg:w-[50%] items-right ml-0 lg:ml-10">
