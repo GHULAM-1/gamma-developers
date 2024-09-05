@@ -99,7 +99,7 @@ export default function Footer() {
             © 2024 <span className="text-white">Gamma Developers.</span> All
             Right Reserved
           </div>
-          <div className="flex gap-14">
+          <div className="flex gap-3 items-center justify-center md:gap-14">
             {footerNavs.map((nav) => (
               <a
                 key={nav.name}

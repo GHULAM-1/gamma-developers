@@ -15,7 +15,7 @@ export default function OurTeam() {
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="bg-gray-800 px-7 rounded-lg flex md:flex-row flex-col items-center justify-between hover:bg-[#d0ff71] text-white hover:text-black group py-2 md:py-0 gap-5 md:gap-0"
+            className="bg-[#212121] px-7 rounded-lg flex md:flex-row flex-col items-center justify-between hover:bg-[#d0ff71] text-white hover:text-black group py-2 md:py-0 gap-5 md:gap-0"
           >
             <div className="flex-shrink-0">
               <img
