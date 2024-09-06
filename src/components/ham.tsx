@@ -23,7 +23,8 @@ export default function Nav() {
     router.push(url);
   };
 
-  const navLinksClassName = "text-4xl md:text-6xl py-4 text-white font-black";
+  const navLinksClassName =
+    "text-[3rem] md:text-6xl py-2  text-white font-black";
 
   return (
     <>
@@ -55,10 +56,10 @@ export default function Nav() {
       <div
         className={`${
           isNavOpen ? "flex" : "hidden"
-        } fixed inset-0 bg-black z-50 flex-col justify-center items-center gap-10`}
+        } fixed inset-0 bg-black z-50 flex-col items-left px-10 gap-3 font-[400] py-32`}
       >
         <X
-          className="absolute top-8 right-8 w-10 h-10 text-white cursor-pointer"
+          className="absolute top-8 right-8 w-10 h-10 text-white cursor-pointer "
           onClick={() => setIsNavOpen(false)}
         />
         <div
