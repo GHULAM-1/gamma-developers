@@ -4,7 +4,14 @@ import PageHeading from "@/components/page-heading";
 import { blogsDummyData } from "@/data/all-blog-data";
 import BlogCard from "@/components/blog-card";
 import { BlogType } from "@/types/all-types";
-export default function Blog() {
+import { blogCardsQuery } from "@/utils/queries";
+import { blogCardsDataT } from "@/types/all-types";
+import { sanityFetch } from "@/utils/sanityFetch";
+
+export default async function Blog() {
+  const blogCardsData: blogCardsDataT[] = await sanityFetch({
+    query: blogCardsQuery,
+  });
   return (
     <div className="max-w-[1365px] w-full flex flex-col justify-center items-center">
       <PageHeading
@@ -12,16 +19,17 @@ export default function Blog() {
         heading="We are a digital agency for visually compelling about stories Hubfolio."
       />
       <div className="text-white flex justify-start w-full gap-12 flex-wrap mt-16 mb-36 ">
-        {blogsDummyData.map((blog: BlogType, index) => {
+        {blogCardsData.map((blog: blogCardsDataT, index) => {
           return (
             <div className=" flex flex-row gap-12">
               <BlogCard
-                date={blog.date}
-                image={blog.image}
-                mainText={blog.mainText}
-                ownerImage={blog.ownerImage}
-                ownerName={blog.ownerName}
-                timeToRead={blog.timeToRead}
+                authorName={blog.authorName}
+                bannerImage={blog.bannerImage}
+                estimatedReadingTime={blog.estimatedReadingTime}
+                mainHeading={blog.mainHeading}
+                publishedAt={blog.publishedAt}
+                slug={blog.slug}
+                tag={blog.tag}
                 key={index}
               />
               {index !== blogsDummyData.length - 1 ? (

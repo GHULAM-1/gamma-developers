@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="flex justify-center overflow-x-hidden items-center w-full"
+      className="flex justify-center text-white overflow-x-hidden items-center w-full"
     >
       <body
-        className={`${inter.className} w-full bg-grid-white/[0.04] overflow-x-hidden bg-black px-4 py-2 md:p-7 flex flex-col justify-center items-center`}
+        className={`${inter.className} w-full bg-grid-white/[0.04] overflow-x-hidden bg-black px-4 py-2 md:p-7 flex flex-col justify-center items-center text-white`}
       >
         {/* Show NavBar on screens larger than md and hide Ham */}
         <div className="hidden md:flex w-full">

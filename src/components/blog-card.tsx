@@ -1,20 +1,21 @@
-import { BlogType } from "@/types/all-types";
+import { blogCardsDataT, BlogType } from "@/types/all-types";
 import React from "react";
 import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Clock } from "lucide-react";
 
 export default function BlogCard({
-  image,
-  mainText,
-  ownerName,
-  ownerImage,
-  date,
-  timeToRead,
-}: BlogType) {
+  authorName,
+  bannerImage,
+  estimatedReadingTime,
+  mainHeading,
+  publishedAt,
+  slug,
+  tag,
+}: blogCardsDataT) {
   return (
     <>
-      <div className="w-[365px] flex flex-col gap-5">
+      <a href={`/blog/${slug}`} className="w-[365px] flex flex-col gap-5">
         <div className="flex justify-between w-full">
           <div className="flex w-full gap-3 ">
             <Avatar>
@@ -22,26 +23,26 @@ export default function BlogCard({
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
             <div className="flex flex-col text-[13px]">
-              <div>{ownerName}</div>
+              <div>{authorName}</div>
               <div className="text-[#FFFFFF9A] font-light">Editor</div>
             </div>
           </div>
           <div className="flex gap-5  whitespace-nowrap items-center justify-center">
             <Clock className="text-[#FFFFFF9A] font-light w-[13px] h-[13px]" />
             <span className="text-[#FFFFFF9A] font-light text-[13px]">
-              {date}
+              {estimatedReadingTime}
             </span>
           </div>
         </div>
         <Image
           width={365}
           height={255}
-          src="https://uithemez.com/i/hubfolio_HTML/inner_pages/assets/imgs/blogs/blog1/1.jpg"
+          src={bannerImage}
           alt=""
           className="rounded-2xl"
         />
-        <div className="text-[22px] font-semibold">{mainText}</div>
-      </div>
+        <div className="text-[22px] font-semibold">{mainHeading}</div>
+      </a>
     </>
   );
 }

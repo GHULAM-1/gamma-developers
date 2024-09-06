@@ -28,6 +28,7 @@ export type BlogType = {
   ownerImage: string;
   date: string;
   timeToRead: string;
+  slug: string;
 };
 
 export type StackType = {
@@ -61,17 +62,25 @@ export type portfolioPageDataType = {
   portfolioStackData: StackType[];
 };
 
+export type ourTeamTypes = {
+  img: string;
+  name: string;
+  designation: string;
+  icons: JSX.Element[];
+};
+export type processTypes = {
+  image: string;
+  number: string;
+  title: string;
+  description: string;
+};
 
-
-  export type ourTeamTypes = {
-     img: string;
-    name: string;
-    designation: string;
-    icons:JSX.Element[];
-  };
-  export type processTypes = {
-    image:string;
-    number: string;
-    title: string;
-    description: string;
-  };
+export type blogCardsDataT = {
+  authorName: string;
+  bannerImage: string;
+  estimatedReadingTime: string;
+  mainHeading: string;
+  publishedAt: string;
+  slug: string;
+  tag: string;
+};
