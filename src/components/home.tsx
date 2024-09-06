@@ -11,8 +11,13 @@ import StackSec from "./stack-sec";
 import DevelopmentCycle from "./development-cycle";
 import StackMob from "./stack-mob";
 import SectionDivider from "./section-divider";
-
-export default function Home() {
+import { blogCardsDataT } from "@/types/all-types";
+import { sanityFetch } from "@/utils/sanityFetch";
+import { blogCardsQuery } from "@/utils/queries";
+export default async function Home() {
+  const blogCardsData: blogCardsDataT[] = await sanityFetch({
+    query: blogCardsQuery,
+  });
   return (
     <>
       <Hero />
@@ -20,7 +25,7 @@ export default function Home() {
       <DevelopmentCycle />
       <ServicesSec />
       <StackSec />
-      <BlogSec />
+      <BlogSec data={blogCardsData} />
       <TestimonialCarousel />
     </>
   );

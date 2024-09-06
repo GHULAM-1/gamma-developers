@@ -1,7 +1,7 @@
 import React from "react";
 import BlogSec from "@/components/blog-sec";
 import PageHeading from "@/components/page-heading";
-import { blogsDummyData } from "@/data/all-blog-data";
+// import { blogsDummyData } from "@/data/all-blog-data";
 import BlogCard from "@/components/blog-card";
 import { BlogType } from "@/types/all-types";
 import { blogCardsQuery } from "@/utils/queries";
@@ -32,7 +32,7 @@ export default async function Blog() {
                 tag={blog.tag}
                 key={index}
               />
-              {index !== blogsDummyData.length - 1 ? (
+              {index !== blogCardsData.length - 1 ? (
                 <div className="border-[1px] h-full border-neutral-400 border-opacity-20"></div>
               ) : null}
             </div>
