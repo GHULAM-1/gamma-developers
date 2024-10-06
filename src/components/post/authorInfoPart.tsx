@@ -21,7 +21,7 @@ export default function Authorinfo({ authorName, authorImage }: AuthorInfo) {
             className="rounded-full aspect-square bg-themeColor"
           />
         </div>
-        <div className="text-Mobile-Text TABLET:text-SMALL_LAPTOP-Text">
+        <div className="text-Mobile-Text text-xl TABLET:text-SMALL_LAPTOP-Text">
           By {authorName}
         </div>
       </div>

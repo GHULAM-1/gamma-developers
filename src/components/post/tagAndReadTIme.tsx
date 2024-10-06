@@ -8,14 +8,15 @@ type TagAndReadTimeProps = {
 export default function TagAndReadTime({ tag, readTime }: TagAndReadTimeProps) {
   return (
     <>
-      <div className="flex justify-between mb-4 TABLET:mb-6">
+      <div className="flex justify-between mb-8 text-lg md:text-3xl TABLET:mb-6 -mt-14 md:-mt-0">
         <Pills
           intent={tag?.split(" ").join("") as PillsProps["intent"]}
           size="regularFilterPills"
+          className="bg-primary rounded-full text-black text-xl "
         >
           {tag}
         </Pills>
-        <div className="text-Mobile-Text TABLET:text-Tablet-Text">
+        <div className="">
           {readTime} min read
         </div>
       </div>

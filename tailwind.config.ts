@@ -9,13 +9,14 @@ const svgToDataUri = require("mini-svg-data-uri");
 
 const config: Config = {
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./pages/**/*.{ts,tsx,js,jsx}",
+    "./components/**/*.{ts,tsx,js,jsx}",
+    "./app/**/*.{ts,tsx,js,jsx}",
+    "./src/**/*.{ts,tsx,js,jsx}",
   ],
   prefix: "",
   theme: {
+  
     container: {
       padding: "2rem",
       screens: {
@@ -23,6 +24,7 @@ const config: Config = {
       },
     },
     extend: {
+
       animation: {
         spotlight: "spotlight 2s ease .25s 1 forwards",
         "accordion-down": "accordion-down 0.2s ease-out",

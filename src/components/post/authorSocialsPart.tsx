@@ -19,7 +19,7 @@ export default function AuthorSocialsPart({
   const secondPlatform = linkToPlatform(secondSocialLink);
 
   const iconsClasses =
-    "TABLET:w-8 TABLET:h-8 w-6 h-6 stroke-textPrimaryColor  ";
+    "TABLET:w-8 TABLET:h-8 w-6 h-6 stroke-textPrimaryColor ";
 
   function platformToIcon(platform: string) {
     switch (platform) {

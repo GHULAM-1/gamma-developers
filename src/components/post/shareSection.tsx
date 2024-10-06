@@ -10,7 +10,7 @@ type ShareSectionProps = {
 export default function ShareSection({ slug }: ShareSectionProps) {
   const [isCopied, setIsCopied] = useState(false);
 
-  const url = `https://www.bitprowler.com//blog/${slug}`;
+  const url = `https://www.gammadevelopers.com/blog/${slug}`;
   const handleCopyClick = () => {
     navigator.clipboard.writeText(url);
     setIsCopied(true);
@@ -22,14 +22,14 @@ export default function ShareSection({ slug }: ShareSectionProps) {
   return (
     <>
       <div className="mt-16 TABLET:mt-10 mb-16 TABLET:mb-28">
-        <div className="text-Mobile-Head TABLET:text-Tablet-Subheading mb-2">
+        <div className="text-Mobile-Head text-4xl TABLET:text-Tablet-Subheading mb-2 leading-relaxed">
           Liked what you read?
           <div>
-            <span className="text-themeColor">share it</span> with your friends
+            <span className="text-primary">share it</span> with your friends
           </div>
         </div>
 
-        <Pills intent="All" size="regularFilterPills" onClick={handleCopyClick}>
+        <Pills intent="All" size="regularFilterPills" className="bg-white text-black " onClick={handleCopyClick}>
           {isCopied ? (
             <div className="flex flex-row-reverse justify-center items-center gap-2">
               <div>copied</div>

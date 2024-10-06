@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Spotlight } from "./spotlight";
+
 export default function PageHeading({
   heading,
   description,
@@ -9,8 +11,11 @@ export default function PageHeading({
 }) {
   return (
     <div className="flex md:flex-row flex-col mt-20 md:mt-28 justify-between items-center md:items-end w-full  max-w-[1365px]  border-b-[1px] border-neutral-400 border-opacity-20 pb-7 md:pb-28 mb-2 md:mb-10">
+      
       {heading && (
         <div className="leading-[1.15] tracking-tighter text-[40px] md:text-[55px] md:w-[740px] text-white font-[500] w-[100%] ">
+          <Spotlight className="top-[10px] left-0 md:left-30 md:-top-0"
+        fill="#D0FF71"/>
           <span className="text-black md:block hidden">blank</span>
           {heading}
         </div>

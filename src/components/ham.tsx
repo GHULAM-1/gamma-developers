@@ -80,12 +80,7 @@ export default function Nav() {
         >
           Contact us
         </div>
-        <div
-          onClick={() => handleNavigation("/services")}
-          className={`${navLinksClassName} cursor-pointer`}
-        >
-          Services
-        </div>
+      
         <div
           onClick={() => handleNavigation("/portfolio")}
           className={`${navLinksClassName} cursor-pointer`}

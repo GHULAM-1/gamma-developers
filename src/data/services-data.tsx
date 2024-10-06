@@ -1,14 +1,16 @@
 import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
-} from "@tabler/icons-react";
+  TbAdjustmentsBolt,
+  TbCloud,
+  TbCurrencyDollar,
+  TbEaseInOut,
+  TbHeart,
+  TbHelp,
+  TbRoute,
+  TbTerminal2,
+} from 'react-icons/tb'; // Import from react-icons
+
 import { StackType } from "@/types/all-types";
+
 export const web: servicePageDataType = {
   mainHeading: "We don’t just build websites, we build websites that SELLS!",
   description:
@@ -65,46 +67,46 @@ export const web: servicePageDataType = {
       title: "Built for developers",
       description:
         "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
+      icon: <TbTerminal2 />, // Updated icon
     },
     {
       title: "Ease of use",
       description:
         "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+      icon: <TbEaseInOut />, // Updated icon
     },
     {
       title: "Pricing like no other",
       description:
         "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+      icon: <TbCurrencyDollar />, // Updated icon
     },
     {
       title: "100% Uptime guarantee",
       description: "We just cannot be taken down by anyone.",
-      icon: <IconCloud />,
+      icon: <TbCloud />, // Updated icon
     },
     {
       title: "Multi-tenant Architecture",
       description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
+      icon: <TbRoute />, // Updated icon
     },
     {
       title: "24/7 Customer Support",
       description:
         "We are available a 100% of the time. Atleast our AI Agents are.",
-      icon: <IconHelp />,
+      icon: <TbHelp />, // Updated icon
     },
     {
       title: "Money back guarantee",
       description:
         "If you donot like EveryAI, we will convince you to like us.",
-      icon: <IconAdjustmentsBolt />,
+      icon: <TbAdjustmentsBolt />, // Updated icon
     },
     {
       title: "And everything else",
       description: "I just ran out of copy ideas. Accept my sincere apologies",
-      icon: <IconHeart />,
+      icon: <TbHeart />, // Updated icon
     },
   ],
   stackData: [
@@ -215,46 +217,46 @@ export const mobile: servicePageDataType = {
       title: "Built for developers",
       description:
         "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
+      icon: <TbTerminal2 />, // Updated icon
     },
     {
       title: "Ease of use",
       description:
         "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+      icon: <TbEaseInOut />, // Updated icon
     },
     {
       title: "Pricing like no other",
       description:
         "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+      icon: <TbCurrencyDollar />, // Updated icon
     },
     {
       title: "100% Uptime guarantee",
       description: "We just cannot be taken down by anyone.",
-      icon: <IconCloud />,
+      icon: <TbCloud />, // Updated icon
     },
     {
       title: "Multi-tenant Architecture",
       description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
+      icon: <TbRoute />, // Updated icon
     },
     {
       title: "24/7 Customer Support",
       description:
         "We are available a 100% of the time. Atleast our AI Agents are.",
-      icon: <IconHelp />,
+      icon: <TbHelp />, // Updated icon
     },
     {
       title: "Money back guarantee",
       description:
         "If you donot like EveryAI, we will convince you to like us.",
-      icon: <IconAdjustmentsBolt />,
+      icon: <TbAdjustmentsBolt />, // Updated icon
     },
     {
       title: "And everything else",
       description: "I just ran out of copy ideas. Accept my sincere apologies",
-      icon: <IconHeart />,
+      icon: <TbHeart />, // Updated icon
     },
   ],
   stackData: [
@@ -361,46 +363,46 @@ export const design: servicePageDataType = {
       title: "Built for developers",
       description:
         "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
+      icon: <TbTerminal2 />, // Updated icon
     },
     {
       title: "Ease of use",
       description:
         "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+      icon: <TbEaseInOut />, // Updated icon
     },
     {
       title: "Pricing like no other",
       description:
         "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+      icon: <TbCurrencyDollar />, // Updated icon
     },
     {
       title: "100% Uptime guarantee",
       description: "We just cannot be taken down by anyone.",
-      icon: <IconCloud />,
+      icon: <TbCloud />, // Updated icon
     },
     {
       title: "Multi-tenant Architecture",
       description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
+      icon: <TbRoute />, // Updated icon
     },
     {
       title: "24/7 Customer Support",
       description:
         "We are available a 100% of the time. Atleast our AI Agents are.",
-      icon: <IconHelp />,
+      icon: <TbHelp />, // Updated icon
     },
     {
       title: "Money back guarantee",
       description:
         "If you donot like EveryAI, we will convince you to like us.",
-      icon: <IconAdjustmentsBolt />,
+      icon: <TbAdjustmentsBolt />, // Updated icon
     },
     {
       title: "And everything else",
       description: "I just ran out of copy ideas. Accept my sincere apologies",
-      icon: <IconHeart />,
+      icon: <TbHeart />, // Updated icon
     },
   ],
   stackData: [

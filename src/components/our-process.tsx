@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import {
   Accordion,
@@ -18,7 +19,7 @@ export default function OurProcess({
     | undefined;
 }) {
   return (
-    <div className="bg-white flex flex-col md:flex-row w-full  rounded-3xl justify-between items-start p-8 md:p-20">
+    <div className="bg-white text-black flex flex-col md:flex-row w-full  rounded-3xl justify-between items-start p-8 md:p-20">
       <div className="w-50% flex  flex-col">
         <div className="text-[39px] md:text-[50px] font-[500] mb-16 md:mb-32">Process</div>
         <img
@@ -40,7 +41,7 @@ export default function OurProcess({
               className="w-full"
             >
               <AccordionItem value={`item-${index + 1}`} className=" ">
-                <AccordionTrigger className="text-[20px] ">
+                <AccordionTrigger className="text-[20px]  ">
                   {item.title}
                 </AccordionTrigger>
                 <AccordionContent className="text-[14px] ">

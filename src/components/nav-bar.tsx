@@ -16,12 +16,14 @@ export default function NavBar() {
   ];
 
   return (
-    <div className=" w-full  flex justify-center items-center fixed top-0  left-0 right-0 z-50 backdrop-blur-md bg-opacity-70 bg-black ">
+    <div className=" w-full  flex justify-center items-center fixed top-0  left-0 right-0 z-50 backdrop-blur-md bg-opacity-70 bg-black px-3">
       <div className="w-full max-w-[1340px] mx-auto flex text-white justify-between items-center py-2">
         <div className="flex gap-2">
+          <a href="/">
           <div className="mt-3">
             <Logo />
           </div>
+          </a>
           <div className="flex gap-2 text-sm rounded-lg justify-center items-center">
             <div className="border-[0.5px] border-[#FFFFFF5A] flex justify-center items-center rounded-3xl text-sm px-1">
               {tabs.map((tab) => (
@@ -39,10 +41,12 @@ export default function NavBar() {
           </div>
         </div>
         <div>
+          <a href="/contact">
           <div className="flex justify-center items-center rounded-3xl bg-white text-black px-5 py-[7px] text-sm gap-2 cursor-pointer">
             <span>Start Project</span>
             <MoveUpRight className="w-[18px] h-[18px]" />
           </div>
+          </a>
         </div>
       </div>
     </div>

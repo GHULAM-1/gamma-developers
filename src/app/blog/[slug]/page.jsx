@@ -31,7 +31,7 @@ export default async function IndividualBlog({ params }) {
   const components = {
     block: {
       h2: ({ children }) => (
-        <h2 className="text-primary   text-Mobile-Head font-semibold TABLET:text-SMALL_LAPTOP-S-Subheading mt-10 mb-3 TABLET:mt-12 TABLET:mb-3  w-full">
+        <h2 className="text-primary text-2xl md:text-5xl  font-semibold mt-10 mb-3 w-full">
           {children}
         </h2>
       ),
@@ -42,7 +42,7 @@ export default async function IndividualBlog({ params }) {
       ),
 
       normal: ({ children }) => (
-        <span className=" text-textPrimaryColor leading-9 text-Mobile-Text TABLET:text-SMALL_LAPTOP-Text ">
+        <span className=" text-textPrimaryColor leading-9 text-Mobile-Text TABLET:text-SMALL_LAPTOP-Text text-lg md:text-2xl ">
           {children}
         </span>
       ),
@@ -58,7 +58,7 @@ export default async function IndividualBlog({ params }) {
       link: ({ children, value }) => (
         <Link
           href={value.href}
-          className="text-themeColor underline"
+          className="text-primary underline"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -76,8 +76,9 @@ export default async function IndividualBlog({ params }) {
       },
     },
     list: {
+
       bullet: ({ children }) => (
-        <ul className=" pl-10 leading-9 text-textPrimaryColor my-2 TABLET:my-4 list-disc TABLET:text-SMALL_LAPTOP-Text text-Mobile-Text gap-3 TABLET:gap-4 flex flex-col TABLET:pl-16 w-full">
+        <ul className=" pl-10 leading-9 text-textPrimaryColor my-2 TABLET:my-4 list-disc TABLET:text-SMALL_LAPTOP-Text text-Mobile-Text gap-3 TABLET:gap-4 flex flex-col TABLET:pl-16 w-full text-xl">
           {children}
         </ul>
       ),
@@ -96,14 +97,15 @@ export default async function IndividualBlog({ params }) {
   if (data !== null && data !== undefined) {
     return (
       <>
-        <div className="w-full flex justify-center items-center">
-          <div className="mt-16 flex flex-col text-textPrimaryColor max-w-[800px] pt-10  px-6 TABLET:px-8 w-full   ">
+        <div className="md:w-[70%] w-full flex justify-center items-center">
+          <div className="mt-20 flex  flex-col text-textPrimaryColor max-w-[900px] w-full md:p-6 p-0">
             <TagAndReadTime
               readTime={data[0]?.estimatedReadingTime}
               tag={data[0]?.category[0]}
+             
             />
             <BlogTitle title={data[0]?.title} />
-            <Divider intent="regular" className="mt-1" />
+            <Divider intent="white" className="mt-5" />
 
             <AuthorSection>
               <Authorinfo
@@ -116,13 +118,13 @@ export default async function IndividualBlog({ params }) {
               />
             </AuthorSection>
 
-            <Divider intent="regular" className="mt-1" />
+            <Divider intent="white" className="mt-1" />
             <BannerImage imageUrl={data[0]?.bannerImage} />
 
-            <div className="flex w-full flex-col justify-center items-center">
+            <div className="flex w-full flex-col justify-center items-center text-xl">
               <PortableText value={data[0]?.body} components={components} />
             </div>
-            <Divider intent="regular" className="mt-1" />
+            <Divider intent="white" className="mt-1" />
             <DateSection date={data[0]?.publishedAt} />
             <ShareSection slug={params.slug} />
             <ReadNextSection readNextSlugs={data[0]?.readNextArticles} />
@@ -132,7 +134,6 @@ export default async function IndividualBlog({ params }) {
           <CTASection path="/">Get to know us</CTASection>x
         </div> */}
 
-        <Footer />
       </>
     );
   } else {

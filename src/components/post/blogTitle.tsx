@@ -4,7 +4,7 @@ type BlogTitleProps = {
 export default function BlogTitle({ title }: BlogTitleProps) {
   return (
     <>
-      <div className="text-Tablet-Large-Text mb-6 TABLET:text-Tablet-Head TABLET:mb-8 ">
+      <div className=" mb-6 text-3xl md:text-7xl leading-[2.8rem] md:leading-[6.7rem]">
         {title}
       </div>
     </>
