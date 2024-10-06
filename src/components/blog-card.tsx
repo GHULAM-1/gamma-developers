@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Clock } from "lucide-react";
-
 export default function BlogCard({
   authorName,
   bannerImage,
@@ -20,20 +19,21 @@ export default function BlogCard({
           <div className="flex w-full gap-3 ">
             <Avatar>
               <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-              <AvatarFallback>CN</AvatarFallback>
+              <AvatarFallback>{authorName}</AvatarFallback>
             </Avatar>
             <div className="flex flex-col text-[13px]">
               <div>{authorName}</div>
               <div className="text-[#FFFFFF9A] font-light">Editor</div>
             </div>
           </div>
-          <div className="flex gap-5  whitespace-nowrap items-center justify-center">
+          <div className="flex gap-5 whitespace-nowrap items-center justify-center">
             <Clock className="text-[#FFFFFF9A] font-light w-[13px] h-[13px]" />
             <span className="text-[#FFFFFF9A] font-light text-[13px]">
               {estimatedReadingTime}
             </span>
           </div>
         </div>
+
         <Image
           width={365}
           height={255}

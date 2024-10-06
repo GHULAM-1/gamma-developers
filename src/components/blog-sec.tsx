@@ -11,7 +11,7 @@ export default function BlogSec({ data }: { data: blogCardsDataT[] }) {
         <div className="text-white flex justify-start w-full gap-12 flex-wrap ">
           {data.map((blog: blogCardsDataT, index) => {
             return (
-              <div className=" flex flex-row gap-12">
+              <div className=" flex flex-row gap-0 md:gap-12">
                 <BlogCard
                   authorName={blog.authorName}
                   bannerImage={blog.bannerImage}

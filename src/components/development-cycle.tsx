@@ -3,13 +3,15 @@ import Marquee from "@/components/magicui/marquee";
 import React from "react";
 import { nanoid } from "nanoid";
 import { processData } from "@/data/process";
-
+import SectionDivider from "./section-divider";
 export default function DevelopmentCycle({}) {
   return (
+  <>
+    <SectionDivider text="Development Cycle" isViewMore={false} />
     <Marquee pauseOnHover className="[--duration:20s] gap-0">
       {processData.map((item) => (
-        <div className="text-white w-[400px] sm:w-[550px] md:w-[700px] md:h-[400px] flex flex-col justify-center lg:justify-normal gap-10 lg:gap-7 lg:w-[500px] lg:h-auto p-4 bg-[#212121] rounded-lg" key={nanoid()}>
-          <div className="flex flex-col md:flex-row items-start lg:gap-0 gap-4">
+        <div className="text-white w-[380px] sm:w-[550px] md:w-[700px] md:h-[400px] flex flex-col-reverse md:flex-col justify-center lg:justify-normal gap-10 lg:gap-7 lg:w-[500px] lg:h-auto p-4 bg-[#212121] rounded-lg" key={nanoid()}>
+          <div className="flex flex-row items-center md:items-start lg:gap-0 gap-4">
             <div>
               <img className="rounded-full aspect-square w-[170px] md:w-[400px] lg:w-[390px] lg:h-[150px] object-cover" src={item.image} alt="" />
             </div>
@@ -24,5 +26,6 @@ export default function DevelopmentCycle({}) {
         </div>
       ))}
     </Marquee>
+  </>
   );
 }

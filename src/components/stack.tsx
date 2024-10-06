@@ -8,8 +8,28 @@ import Marquee from "./magicui/marquee";
 export default function Stack({ data }: { data: StackType[] | undefined }) {
   return (
     <>
-      <div className=" grid grid-cols-2  md:grid-cols-5 lg:flex-row items-center justify-center gap-y-10 bg-black dark:bg-black w-full">
+      <div className="hidden md:grid grid-cols-2 mt-4 md:grid-cols-5 lg:flex-row items-center justify-center gap-y-10 bg-black dark:bg-black w-full">
         {data?.map((stack: StackType) => {
+          return (
+            <Card
+              title={stack.name}
+              brandColor={stack.brandColor}
+              imageUrl={stack.image}
+            >
+              <CanvasRevealEffect
+                animationSpeed={3}
+                containerClassName="bg-black"
+                colors={[stack.colors]}
+                dotSize={2}
+              />
+              {/* Radial gradient for the cute fade */}
+              <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
+            </Card>
+          );
+        })}
+      </div>
+      <div className="grid md:hidden grid-cols-2 mt-4 md:grid-cols-5 lg:flex-row items-center justify-center gap-y-10 bg-black dark:bg-black w-full">
+        {data?.slice(0, 8).map((stack: StackType) => {
           return (
             <Card
               title={stack.name}
