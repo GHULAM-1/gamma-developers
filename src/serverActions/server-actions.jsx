@@ -10,14 +10,14 @@ export async function formSubmission(data) {
 
   try {
     await resend.emails.send({
-      from: "gammadevelopers <team@gammadevelopers.com>",
+      from: "gammadevelopers <contact@gammadevelopers.com>",
       to: ["ilyasghulam35@gmail.com"],
       subject: "Guys We Have A Client !!!",
       text: `client's email id is -----${email}----- and client's name ----- ${name} ----- and the message is -----${message} ---------`,
     });
 
     await resend.emails.send({
-      from: "gammadevelopers <team@gammadevelopers.com",
+      from: "gammadevelopers <contact@gammadevelopers.com",
       to: [email],
       subject: "Thank you for contacting",
       react: <Email name={name} />,

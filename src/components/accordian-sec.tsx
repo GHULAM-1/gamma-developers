@@ -12,7 +12,7 @@ export default function WhoWeAre() {
 
         <div className='text-white text-left space-y-6 w-full  md:py-0 py-7 md:w-[50%]'>
             <h2 className='text-xl '>Who We Are? </h2>
-            <p className='font-semibold text-2xl'>Elevating brands globally with innovative strategies and visionary design</p>
+            <p className='font-semibold text-2xl'>Empowering businesses worldwide with cutting-edge software solutions and transformative technology.</p>
             <div>
                 <AccordionDemo/>
             </div>

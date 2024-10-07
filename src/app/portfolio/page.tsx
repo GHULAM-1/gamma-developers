@@ -15,7 +15,7 @@ export default function PortfolioPage() {
           <SectionDivider text="Our Portfolio" isViewMore={false} />
         </div>
 
-        <div className="flex w-full gap-x-14 gap-y-24 flex-wrap justify-between items-start mb-[200px] ">
+        <div className="flex w-full gap-x-14 gap-y-24 flex-wrap items-center justify-center mb-[200px] ">
           {portfolioPageData?.map((item) => (
             <PortfolioCard
               key={item.slug}

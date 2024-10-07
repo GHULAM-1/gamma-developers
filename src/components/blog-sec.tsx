@@ -6,7 +6,7 @@ import BlogCard from "./blog-card";
 export default function BlogSec({ data }: { data: blogCardsDataT[] }) {
   return (
     <>
-      <div className="max-w-[1365px] w-full flex flex-col justify-center items-center mb-36">
+      <div className="max-w-[1365px] w-full flex flex-col justify-center items-center mb-2 mt-8 md:mt-0 md:mb-24">
         <SectionDivider text="Our Blogs" />
         <div className="text-white flex justify-start w-full gap-12 flex-wrap ">
           {data.map((blog: blogCardsDataT, index) => {

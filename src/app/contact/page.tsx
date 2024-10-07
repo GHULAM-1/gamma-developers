@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useRef } from "react";
 import { MoveUpRight } from "lucide-react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -16,6 +16,8 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import { formSubmission } from "@/serverActions/server-actions";
 import { Input } from "@/components/ui/input";
+
+
 const formSchema = z.object({
   username: z.string().min(2, {
     message: "Username must be at least 2 characters.",
@@ -33,6 +35,7 @@ const formSchema = z.object({
 
 export default function Contact() {
   const { toast } = useToast();
+  
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -49,9 +52,11 @@ export default function Contact() {
     formSubmission(data);
     toast({
       title:
-        " form submitted , Thank you for contacting! we will reach out to you soon",
+        "Form submitted, Thank you for contacting! We will reach out to you soon.",
     });
-
+    
+   
+    
     form.reset();
   }
 
@@ -72,7 +77,7 @@ export default function Contact() {
 
   return (
     <div className="p-4 text-white max-w-[1365px] w-full flex justify-center items-center flex-col">
-      <div className="text-center text-[48px] md:text-[120px] text-white mt-20 font-bold mb-8">
+      <div className="text-center text-[48px] md:text-[120px] text-white mt-2 md:mt-20 font-bold mb-8">
         GET IN TOUCH
       </div>
       <div className="flex justify-center w-screen">
@@ -149,7 +154,7 @@ export default function Contact() {
                       <FormControl>
                         <Input
                           placeholder="Name"
-                          className="text-neutral-400 bg-black border-b-[1px] border-neutral-400 placeholder-neutral-400 border-opacity-30 text-[20px] pb-4"
+                          className="text-neutral-400 bg-black border-b-[1px] border-primary placeholder-primary border-opacity-30 text-[20px] pb-4"
                           {...field}
                         />
                       </FormControl>
@@ -166,7 +171,7 @@ export default function Contact() {
                       <FormControl>
                         <Input
                           placeholder="Email"
-                          className="text-neutral-400 bg-black border-b-[1px] border-neutral-400 placeholder-neutral-400 border-opacity-30 text-[20px] pb-4"
+                          className="text-primary bg-black border-b-[1px] border-primary placeholder-primary border-opacity-30 text-[20px] pb-4"
                           {...field}
                         />
                       </FormControl>
@@ -184,7 +189,7 @@ export default function Contact() {
                     <FormControl>
                       <Input
                         placeholder="Subject"
-                        className="text-neutral-400 bg-black border-b-[1px] border-neutral-400 placeholder-neutral-400 border-opacity-30 text-[20px] pb-4"
+                        className="text-primary bg-black border-b-[1px] border-primary placeholder-primary border-opacity-30 text-[20px] pb-4"
                         {...field}
                       />
                     </FormControl>
@@ -201,7 +206,7 @@ export default function Contact() {
                     <FormControl>
                       <textarea
                         placeholder="Message"
-                        className="w-full text-neutral-400 bg-black border-b-[1px] border-neutral-400 placeholder-neutral-400 border-opacity-30 text-[22px] pb-1"
+                        className="w-full text-primary bg-black border-b-[1px] border-primary placeholder-primary border-opacity-30 text-[22px] pb-1"
                         {...field}
                       />
                     </FormControl>
@@ -210,6 +215,7 @@ export default function Contact() {
                 )}
               />
               <div className="flex mt-10">
+           
                 <Button
                   type="submit"
                   className="rounded-3xl bg-white text-black px-5 py-[7px] text-sm gap-2 hover:bg-primary"
@@ -217,6 +223,7 @@ export default function Contact() {
                   <span>Let's Talking</span>
                   <MoveUpRight className="w-[18px] h-[18px]" />
                 </Button>
+               
               </div>
             </form>
           </Form>

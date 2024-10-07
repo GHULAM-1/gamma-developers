@@ -11,13 +11,13 @@ import {
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-3xl  hover:text-primary focus:text-primary">What's Our Mission?</AccordionTrigger>
           <AccordionContent className="text-xl">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit officiis veniam ab aliquid, optio natus debitis quasi voluptas ut magnam non laudantium magni maxime alias.
+          To deliver innovative, scalable, and efficient software that drives business success and fosters technological growth.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
           <AccordionTrigger className="text-3xl hover:text-primary focus:text-primary">Why Choose Us?</AccordionTrigger>
           <AccordionContent className="text-xl">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi repellendus aspernatur aliquam alias fuga, hic voluptatum, unde, sequi delectus quis repellat ut. Natus, impedit voluptatibus.
+          At Gamma Developers, we combine expertise with innovation to provide custom solutions that meet your business needs. Our commitment to quality and customer satisfaction sets us apart.
           </AccordionContent>
         </AccordionItem>
         

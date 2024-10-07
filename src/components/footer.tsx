@@ -1,6 +1,6 @@
 import { MoveUpRight } from "lucide-react";
 import Logo from "./logo";
-import { Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin,ArrowUpRight  } from "lucide-react";
 import { LetsTalk } from "./lets-talk";
 
 export default function Footer() {
@@ -8,10 +8,6 @@ export default function Footer() {
     {
       name: "Home",
       href: "/",
-    },
-    {
-      name: "Services",
-      href: "/services",
     },
     {
       name: "Portfolio",
@@ -36,12 +32,12 @@ export default function Footer() {
     {
       name: "linkedin",
       href: "https://www.instagram.com/uithemez/",
-      icon: <Instagram className="w-[15px] h-[15px] stroke-white" />,
+      icon: <Linkedin className="w-[15px] h-[15px] stroke-white" />,
     },
     {
       name: "upwork",
       href: "https://www.instagram.com/uithemez/",
-      icon: <Instagram className="w-[15px] h-[15px] stroke-white" />,
+      icon: <ArrowUpRight className="w-[15px] h-[15px] stroke-white" />,
     },
   ];
 
@@ -89,8 +85,8 @@ export default function Footer() {
           </div>
           <div className="text-neutral-400">
             <div className="text-[12px] mb-[10px]">INQUIRY</div>
-            <div className="text-[16px]">hello@hubfolio.agency</div>
-            <div className="text-[16px]">+0685689696</div>
+            <div className="text-[16px]">contact@gammadevelopers.com</div>
+            <div className="text-[16px]">+92(304)5570099</div>
           </div>
         </div>
 

@@ -53,7 +53,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="text-white px-5 md:px-0 max-w-[1365px] w-screen h-screen gap-5 md:justify-center flex mb-16 lg:flex-row flex-col tracking-tighter items-start lg:items-center">
+    <div className="text-white px-5 md:px-0 max-w-[1365px] w-screen h-full md:h-screen gap-5 md:justify-center flex mb-16 lg:flex-row flex-col tracking-tighter items-start lg:items-center">
       <Spotlight
         className="top-[10px] left-0 md:left-30 md:-top-0"
         fill="#D0FF71"

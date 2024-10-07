@@ -3,30 +3,30 @@ import { testimonialsTypes } from "../types/all-types";
 export const testimonialsData: testimonialsTypes[] = [
   {
     designation: "Marketing Manager",
-    img: "https://uithemez.com/i/hubfolio_HTML/preview/assets/imgs/testim/avatar1.jpg",
+    img: "/clients/sarah.jpeg",
     message:
-      "Ali transformed our website with his stunning designs and intuitive user experience. Our traffic and engagement have significantly increased since the redesign.",
+      "We hired Gamma Developers to develop a custom website for our business,The team was incredibly responsive, delivering a sleek and modern website that perfectly captured our brand's essence. Their attention to detail and technical expertise were top-notch.",
     name: "Sarah M.",
   },
   {
-    designation: "CEO of Tech Solutions",
-    img: "https://uithemez.com/i/hubfolio_HTML/preview/assets/imgs/testim/avatar1.jpg",
+    designation: "CTO of Apex Solutions",
+    img: "/clients/john.jpeg",
     message:
-      "Working with Ali was a fantastic experience. His attention to detail and creative approach helped us create a strong brand identity that resonates with our audience.",
+      "Gamma Developers transformed our mobile app vision into reality! They built an intuitive and high-performance app for both iOS and Android that exceeded our expectations.Their professionalism and support made the entire process smooth and efficient.",
     name: "John D.",
   },
   {
-    designation: " Digital Marketing Director",
-    img: "https://uithemez.com/i/hubfolio_HTML/preview/assets/imgs/testim/avatar1.jpg",
+    designation: "Founder of BrightMind AI",
+    img: "/clients/herman.jpeg",
     message:
-      "Ali's expertise in digital marketing has been invaluable. His campaigns have boosted our online presence and generated impressive results.",
-    name: "Emily R.",
+      "I approached Gamma Developers for AI development, and they truly delivered innovative solutions. Their team brought cutting-edge AI capabilities to our project, allowing us to automate complex tasks and improve operational efficiency.",
+    name: "Herman",
   },
   {
-    designation: "Project Manager",
-    img: "https://uithemez.com/i/hubfolio_HTML/preview/assets/imgs/testim/avatar1.jpg",
+    designation: "CEO Carter Digital",
+    img: "/clients/lisa.jpeg",
     message:
-      "Ali is a true professional. His dedication to delivering high-quality work and his ability to understand our needs made the entire process seamless and enjoyable.",
+      "Gamma Developers helped integrate a user-friendly drag-and-drop website builder for our clients, and the results were outstanding! Not only is the tool easy to use, but the support and guidance from their team were exceptional.",
     name: "Lisa T",
   },
 ];
