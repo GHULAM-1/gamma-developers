@@ -22,90 +22,90 @@ export const web: servicePageDataType = {
   ],
   subTypesData: [
     {
-      title: "HIPAA and SOC2 Compliant",
+      title: "CRM/ERP",
       description:
-        "Our applications are HIPAA and SOC2 compliant, your data is safe with us, always.",
+        "We provide scalable CMS and ERP solutions to streamline content management and business operations. Boost efficiency, automate processes, and gain real-time insights with our customizable platforms.",
     },
     {
-      title: "Automated Social Media Posting",
+      title: "AI Chatbots",
       description:
-        "Schedule and automate your social media posts across multiple platforms to save time and maintain a consistent online presence.",
+        "We build intelligent AI chatbots and scraping bots that automate customer interactions and data collection. Streamline communication and gather insights with our powerful, custom-built bots.",
     },
     {
-      title: "Advanced Analytics",
+      title: "Automation Softwares",
       description:
-        "Gain insights into your social media performance with detailed analytics and reporting tools to measure engagement and ROI.",
+        "We deliver custom automation software to streamline your business processes, reduce manual tasks, and boost efficiency with intelligent, scalable solutions.",
     },
     {
-      title: "Content Calendar",
+      title: "E-commerce ",
       description:
-        "Plan and organize your social media content with an intuitive calendar view, ensuring you never miss a post.",
+        "We build robust e-commerce platforms with intuitive admin panels, empowering you to manage products, orders, and customer data effortlessly.",
     },
     {
-      title: "Audience Targeting",
+      title: "No Code Sites",
       description:
-        "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
+        "We offer no-code website solutions like WordPress and Shopify, empowering you to build and manage your online presence with ease—no coding required.",
     },
     {
-      title: "Social Listening",
+      title: "Landing Pages",
       description:
-        "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
+        "We create sleek, high-converting landing pages for agencies, portfolios, blogs, and more. Showcase your brand with stunning, user-friendly designs.",
     },
     {
-      title: "Customizable Templates",
+      title: "CMS",
       description:
-        "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
+        "We deliver flexible CMS solutions, allowing you to manage and update your website content effortlessly, with no technical expertise needed.",
     },
     {
-      title: "Collaboration Tools",
+      title: "SAAS Products",
       description:
-        "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
+        "We create scalable SaaS products that help businesses streamline operations and deliver exceptional user experiences—cloud-based, flexible, and ready to grow with you.",
     },
   ],
   supportData: [
     {
       title: "Built for developers",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "Crafted specifically for engineers, developers, and innovators who push boundaries. Our tools are designed to empower those who build the future.",
       icon: <TbTerminal2 />, // Updated icon
     },
     {
       title: "Ease of use",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "Our solutions are intuitive and user-friendly, allowing you to focus on creation rather than complexity. No steep learning curves—just results.",
       icon: <TbEaseInOut />, // Updated icon
     },
     {
       title: "Pricing like no other",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "Competitive pricing with no hidden fees. What you see is what you get—clear, fair, and flexible for businesses of all sizes.",
       icon: <TbCurrencyDollar />, // Updated icon
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: "Performance Optimization",
+      description: "Speed and efficiency are key. We built to maximize performance, ensuring fast load optimized resource usage for all your operations.",
       icon: <TbCloud />, // Updated icon
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Security First",
+      description: "Your data is safe with us. We prioritize security, ensuring that all systems are protected with the latest encryption and safeguards to keep your information secure.",
       icon: <TbRoute />, // Updated icon
     },
     {
       title: "24/7 Customer Support",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "Round-the-clock support from our expert team. Whether it’s day or night, we’re here to help whenever you need us.",
       icon: <TbHelp />, // Updated icon
     },
     {
-      title: "Money back guarantee",
+      title: "Custom Integrations",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "Seamlessly integrate with your existing tools and platforms. We provide custom solutions that work in harmony with your current systems to streamline workflows.",
       icon: <TbAdjustmentsBolt />, // Updated icon
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "User-Centric Design",
+      description: "Your users come first. Every product we deliver is designed with the end-user in mind, ensuring an intuitive, seamless experience that keeps them engaged.",
       icon: <TbHeart />, // Updated icon
     },
   ],
@@ -162,9 +162,9 @@ export const web: servicePageDataType = {
 };
 
 export const mobile: servicePageDataType = {
-  mainHeading: "We don’t just build websites, we build websites that SELLS!",
+  mainHeading: "We don’t just build Apps,   we build Apps that SELLS!",
   description:
-    "We deliver top-quality websites through a proven development cycle, turning challenges into innovative solutions that ensure your site stands out with exceptional performance and reliability.",
+    "We deliver top-quality Mobile Applications through a proven development cycle, turning challenges into innovative solutions that ensure your site stands out with exceptional performance and reliability.",
   marqueeContent: [
     " APPLICATION DEVELOPMENT ",
     " APPLICATION DEVELOPMENT ",
@@ -172,90 +172,90 @@ export const mobile: servicePageDataType = {
   ],
   subTypesData: [
     {
-      title: "HIPAA and SOC2 Compliant",
+      title: "Native Apps",
       description:
-        "Our applications are HIPAA and SOC2 compliant, your data is safe with us, always.",
+        "Apps built specifically for a particular operating system (OS), such as Android or iOS, using platform-specific programming languages (e.g., Swift for iOS, Kotlin for Android).",
     },
     {
-      title: "Automated Social Media Posting",
+      title: "Cross Platform",
       description:
-        "Schedule and automate your social media posts across multiple platforms to save time and maintain a consistent online presence.",
+        "Apps that can run on multiple platforms (iOS, Android, etc.) using a single codebase, often built with frameworks like Flutter or React Native.",
     },
     {
-      title: "Advanced Analytics",
+      title: "Games",
       description:
-        "Gain insights into your social media performance with detailed analytics and reporting tools to measure engagement and ROI.",
+        "Mobile games developed for entertainment purposes, ranging from simple 2D games to complex 3D games with immersive experiences. These can be built as native, hybrid, or cross-platform apps.",
     },
     {
-      title: "Content Calendar",
+      title: "Hybrid App",
       description:
-        "Plan and organize your social media content with an intuitive calendar view, ensuring you never miss a post.",
+        "These are web apps wrapped in a native container. Technologies like HTML, CSS, and JavaScript are used along with frameworks like Ionic or Apache Cordova to create apps that run on both iOS and Android.",
     },
     {
-      title: "Audience Targeting",
+      title: "Progressive Web Apps",
       description:
-        "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
+        "Web applications that behave like native mobile apps when accessed through a mobile browser. PWAs offer a mobile app-like experience, including offline access and push notifications.",
     },
     {
-      title: "Social Listening",
+      title: "On-Demand Apps",
       description:
-        "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
+        "Apps that allow users to book or request services (e.g., Uber, food delivery apps, etc.) directly through the app.",
     },
     {
-      title: "Customizable Templates",
+      title: "Enterprise Mobile Apps",
       description:
-        "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
+        " Custom-built apps tailored to the specific needs of an organization. These apps focus on improving productivity, communication, or business processes within the company.",
     },
     {
-      title: "Collaboration Tools",
+      title: "Web-Based Apps",
       description:
-        "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
+        "Mobile-optimized websites that function like an app on a mobile device. These are accessed through web browsers and are not downloadable via app stores.",
     },
   ],
   supportData: [
     {
       title: "Built for developers",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "Crafted specifically for engineers, developers, and innovators who push boundaries. Our tools are designed to empower those who build the future.",
       icon: <TbTerminal2 />, // Updated icon
     },
     {
       title: "Ease of use",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "Our solutions are intuitive and user-friendly, allowing you to focus on creation rather than complexity. No steep learning curves—just results.",
       icon: <TbEaseInOut />, // Updated icon
     },
     {
       title: "Pricing like no other",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "Competitive pricing with no hidden fees. What you see is what you get—clear, fair, and flexible for businesses of all sizes.",
       icon: <TbCurrencyDollar />, // Updated icon
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: "Performance Optimization",
+      description: "Speed and efficiency are key. We built to maximize performance, ensuring fast load optimized resource usage for all your operations.",
       icon: <TbCloud />, // Updated icon
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Security First",
+      description: "Your data is safe with us. We prioritize security, ensuring that all systems are protected with the latest encryption and safeguards to keep your information secure.",
       icon: <TbRoute />, // Updated icon
     },
     {
       title: "24/7 Customer Support",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "Round-the-clock support from our expert team. Whether it’s day or night, we’re here to help whenever you need us.",
       icon: <TbHelp />, // Updated icon
     },
     {
-      title: "Money back guarantee",
+      title: "Custom Integrations",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "Seamlessly integrate with your existing tools and platforms. We provide custom solutions that work in harmony with your current systems to streamline workflows.",
       icon: <TbAdjustmentsBolt />, // Updated icon
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "User-Centric Design",
+      description: "Your users come first. Every product we deliver is designed with the end-user in mind, ensuring an intuitive, seamless experience that keeps them engaged.",
       icon: <TbHeart />, // Updated icon
     },
   ],
@@ -274,14 +274,14 @@ export const mobile: servicePageDataType = {
       colors: [97, 218, 251],
     },
     {
-      name: "NEXTJS",
-      image: "/stack-icons/nextjs-color.svg",
+      name: "PHP",
+      image: "/stack-icons/php-color.svg",
       brandColor: "#FFFFFF8A",
       colors: [192, 192, 192],
     },
     {
-      name: "SHOPIFY",
-      image: "/stack-icons/shopify-color.svg",
+      name: "SWIFT",
+      image: "/stack-icons/swift-color.svg",
       brandColor: "#7AB55C",
       colors: [122, 181, 92],
     },
@@ -312,103 +312,103 @@ export const mobile: servicePageDataType = {
 };
 
 export const design: servicePageDataType = {
-  mainHeading: "We don’t just build websites, we build websites that SELLS!",
+  mainHeading: "We don’t just create designs, we create designs that SELLS!",
   description:
-    "We deliver top-quality websites through a proven development cycle, turning challenges into innovative solutions that ensure your site stands out with exceptional performance and reliability.",
+    "We create top-notch UI/UX designs through a user-centered process, turning ideas into intuitive, visually stunning interfaces that provide seamless interactions, ensuring an engaging and reliable user experience.",
   marqueeContent: [" UI/UX DESIGN ", " UI/UX DESIGN ", " UI/UX DESIGN "],
   subTypesData: [
     {
-      title: "HIPAA and SOC2 Compliant",
+      title: " Interaction Design ",
       description:
-        "Our applications are HIPAA and SOC2 compliant, your data is safe with us, always.",
+        " Creating intuitive and efficient interactions between users and the interface..",
     },
     {
-      title: "Automated Social Media Posting",
+      title: "Visual Design",
       description:
-        "Schedule and automate your social media posts across multiple platforms to save time and maintain a consistent online presence.",
+        "The aesthetics of the interface, including layout, colors, typography, and imagery.",
     },
     {
-      title: "Advanced Analytics",
+      title: "Information Architecture",
       description:
-        "Gain insights into your social media performance with detailed analytics and reporting tools to measure engagement and ROI.",
+        "Structuring and organizing content and information for easy navigation.",
     },
     {
-      title: "Content Calendar",
+      title: "User Research",
       description:
-        "Plan and organize your social media content with an intuitive calendar view, ensuring you never miss a post.",
+        " Understanding user needs, behaviors, and pain points to guide design decisions.",
     },
     {
-      title: "Audience Targeting",
+      title: "Wireframing",
       description:
-        "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
+        " Creating low-fidelity layouts that outline the structure and placement of elements in the interface.",
     },
     {
-      title: "Social Listening",
+      title: "Prototyping",
       description:
-        "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
+        "Building interactive, functional mockups of the design to simulate user experiences.",
     },
     {
-      title: "Customizable Templates",
+      title: " Responsive Design",
       description:
-        "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
+        " Ensuring the design adapts seamlessly to different screen sizes and devices.",
     },
     {
-      title: "Collaboration Tools",
+      title: "Usability Testing",
       description:
-        "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
+        "Testing the design with real users to identify issues and improve the interface.",
     },
   ],
   supportData: [
     {
       title: "Built for developers",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "Crafted specifically for engineers, developers, and innovators who push boundaries. Our tools are designed to empower those who build the future.",
       icon: <TbTerminal2 />, // Updated icon
     },
     {
       title: "Ease of use",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "Our solutions are intuitive and user-friendly, allowing you to focus on creation rather than complexity. No steep learning curves—just results.",
       icon: <TbEaseInOut />, // Updated icon
     },
     {
       title: "Pricing like no other",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "Competitive pricing with no hidden fees. What you see is what you get—clear, fair, and flexible for businesses of all sizes.",
       icon: <TbCurrencyDollar />, // Updated icon
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: "Performance Optimization",
+      description: "Speed and efficiency are key. We built to maximize performance, ensuring fast load optimized resource usage for all your operations.",
       icon: <TbCloud />, // Updated icon
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Security First",
+      description: "Your data is safe with us. We prioritize security, ensuring that all systems are protected with the latest encryption and safeguards to keep your information secure.",
       icon: <TbRoute />, // Updated icon
     },
     {
       title: "24/7 Customer Support",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "Round-the-clock support from our expert team. Whether it’s day or night, we’re here to help whenever you need us.",
       icon: <TbHelp />, // Updated icon
     },
     {
-      title: "Money back guarantee",
+      title: "Custom Integrations",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "Seamlessly integrate with your existing tools and platforms. We provide custom solutions that work in harmony with your current systems to streamline workflows.",
       icon: <TbAdjustmentsBolt />, // Updated icon
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "User-Centric Design",
+      description: "Your users come first. Every product we deliver is designed with the end-user in mind, ensuring an intuitive, seamless experience that keeps them engaged.",
       icon: <TbHeart />, // Updated icon
     },
   ],
   stackData: [
     {
-      name: "A W S",
-      image: "/stack-icons/amazon-color.svg",
+      name: "TAILWIND",
+      image: "/stack-icons/tailwindcss-color.svg",
       brandColor: "#FF9900",
       colors: [255, 153, 0],
     },

@@ -11,27 +11,28 @@ const PortfolioCard2 : PortfolioCardType = {
     image: "/collages/seektal.png",
 
 }
-const PortfolioCard3 : PortfolioCardType = {
-    id:3,
-    name: "Bitprowler",
-    image: "/collages/bitProwler.png",
-}
-const PortfolioCard4 : PortfolioCardType = {
-    id:4,
-    name: "Custom Computers",
-    image: "/collages/custom-computers.png",
-
-}
 const PortfolioCard5 : PortfolioCardType = {
-    id:5,
+    id:3,
     name: "Portfolio",
     image: "/collages/ali-kan.png",
 }
 const PortfolioCard6 : PortfolioCardType = {
-    id:6,
+    id:4,
     name: "Exclusive",
     image: "/collages/exclusive.png",
 }
+const PortfolioCard3 : PortfolioCardType = {
+    id:5,
+    name: "Bitprowler",
+    image: "/collages/bitProwler.png",
+}
+const PortfolioCard4 : PortfolioCardType = {
+    id:6,
+    name: "Custom Computers",
+    image: "/collages/custom-computers.png",
+
+}
+
 const PortfolioCard7 : PortfolioCardType = {
     id:7,
     name: "backroads",
@@ -51,10 +52,10 @@ const PortfolioCard9 : PortfolioCardType = {
 export const AllPortfolioCardsData: PortfolioCardType[] = [
     PortfolioCard1,
     PortfolioCard2,
+    PortfolioCard6,
+    PortfolioCard5,
     PortfolioCard3,
     PortfolioCard4,
-    PortfolioCard5,
-    PortfolioCard6,
     PortfolioCard7,
     PortfolioCard8,
     PortfolioCard9

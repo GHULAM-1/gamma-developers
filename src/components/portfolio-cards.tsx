@@ -13,7 +13,7 @@ export function DirectionAwareHoverDemo() {
           <SectionDivider className="hidden md:flex" text="Our Portfolio" />
           <SectionDivider className="md:hidden flex" text="Portfolio" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-          {AllPortfolioCardsData.slice(0, 6).map(
+          {AllPortfolioCardsData.slice(0, 4).map(
             (portfolioCard: PortfolioCardType) => {
               return (
                 <div

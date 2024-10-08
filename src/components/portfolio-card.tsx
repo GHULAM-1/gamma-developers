@@ -15,9 +15,9 @@ export default function PortfolioCard({
   return (
     <a
       href={`/portfolio/${slug}`}
-      className="cursor-pointer flex w-[623px] group flex-col border-b-[1px] border-neutral-400 border-opacity-20  py-8"
+      className="cursor-pointer flex w-[70%] md:w-[90%] group flex-col border-b-[1px] border-neutral-400 border-opacity-20  py-8"
     >
-      <img src={image} alt="" className=" object-cover  rounded-2xl" />
+      <img src={image} alt="" className=" object-cover w-auto  rounded-2xl" />
       <div className="flex justify-between items-center mt-10">
         <div>
           <div className="text-[28px] text-white mb-[15px]">

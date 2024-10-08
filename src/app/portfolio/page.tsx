@@ -8,14 +8,14 @@ export default function PortfolioPage() {
     <>
       <div className="max-w-[1365px] w-full flex flex-col justify-center items-center">
         <PageHeading
-          description="Crafting new bright brands, unique visual systems and digital experience focused on a wide range of original collabs."
-          heading="We are a digital agency for visually compelling about stories Hubfolio."
+          description=" our portfolio reflects innovative software solutions that solve real-world problems. From robust web and mobile apps to AI-driven platforms, each project is designed to push boundaries and deliver measurable results. Explore how we’ve helped businesses transform with cutting-edge technology and development expertise."
+          heading="We Don’t Just Showcase Work, We Build Solutions That Drive Success."
         />
         <div className="mt-14 w-full">
           <SectionDivider text="Our Portfolio" isViewMore={false} />
         </div>
 
-        <div className="flex w-full gap-x-14 gap-y-24 flex-wrap items-center justify-center mb-[200px] ">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-[100%] justify-items-center  mb-[200px] ">
           {portfolioPageData?.map((item) => (
             <PortfolioCard
               key={item.slug}

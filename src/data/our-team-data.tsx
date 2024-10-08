@@ -10,11 +10,11 @@ const teamMembers: ourTeamTypes[] = [
       <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
         <LinkedinIcon />
       </a>,
-      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-        <InstagramIcon />
-      </a>,
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/GHULAM-1" target="_blank" rel="noopener noreferrer">
         <GithubIcon />
+      </a>,
+      <a href="https://www.instagram.com/_ghulam_1/profilecard/?igsh=MTF3b21xMmJybW90Zw==" target="_blank" rel="noopener noreferrer">
+        <InstagramIcon />
       </a>,
     ],
   },
@@ -39,14 +39,14 @@ const teamMembers: ourTeamTypes[] = [
     name: "M.Ibrahim",
     designation: "Co Founder",
     icons: [
-      <a href="https://www.instagram.com/.chaudharyy/profilecard/?igsh=MWFmMGRpMWZubWkzNA==" target="_blank" rel="noopener noreferrer">
-        <InstagramIcon />
+      <a href="https://www.linkedin.com/in/ibrahim-ch-031607323/" target="_blank" rel="noopener noreferrer">
+        <LinkedinIcon />
       </a>,
       <a href="https://github.com/IbrahimChaudhary" target="_blank" rel="noopener noreferrer">
         <GithubIcon />
       </a>,
-      <a href="https://www.linkedin.com/in/ibrahim-ch-031607323/" target="_blank" rel="noopener noreferrer">
-        <LinkedinIcon />
+      <a href="https://www.instagram.com/.chaudharyy/profilecard/?igsh=MWFmMGRpMWZubWkzNA==" target="_blank" rel="noopener noreferrer">
+        <InstagramIcon />
       </a>,
     ],
   },

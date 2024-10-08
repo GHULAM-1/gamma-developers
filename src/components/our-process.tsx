@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { processData } from "@/data/process";
 
 export default function OurProcess({
   data,
@@ -33,7 +34,7 @@ export default function OurProcess({
           elevating our partners to their next and best selves.
         </div>
         <div>
-          {data?.map((item, index) => (
+          {processData.map((item, index) => (
             <Accordion
               defaultValue="item-1"
               type="single"
@@ -53,7 +54,7 @@ export default function OurProcess({
         </div>
         <div className="flex mt-14 cursor-pointer">
           <div className=" hover:bg-primary transition-all ease-linear hover:scale-105 rounded-3xl px-6 py-3 flex border-[1px] border-neutral-400 border-opacity-80">
-            Work with us
+           <a href="/contact"> Work with us</a>
           </div>
         </div>
       </div>

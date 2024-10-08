@@ -113,7 +113,7 @@ export default function Contact() {
             <div>
               <div className="text-[22px] mb-[15px]">Email</div>
               <div className="w-[242px] text-[16px] text-neutral-400">
-                gamma@developers.com
+               contact@gammadevelopers.com
               </div>
             </div>
           </div>
