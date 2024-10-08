@@ -63,15 +63,15 @@ export default function Contact() {
   const footerNavs = [
     {
       name: "Instagram",
-      href: "/",
+      href: "/https://www.instagram.com/gammadevelopers/profilecard/?igsh=MXZlZzBmY2kwMGxucQ==",
     },
     {
       name: "Linkedin",
-      href: "/services",
+      href: "/",
     },
     {
       name: "Upwork",
-      href: "/portfolio",
+      href: "/https://www.upwork.com/freelancers/~01293c969e4754c164?mp_source=share",
     },
   ];
 

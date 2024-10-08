@@ -26,17 +26,17 @@ export default function Footer() {
   const socials = [
     {
       name: "instagram",
-      href: "https://www.instagram.com/uithemez/",
+      href: "https://www.instagram.com/gammadevelopers/profilecard/?igsh=MXZlZzBmY2kwMGxucQ==",
       icon: <Instagram className="w-[15px] h-[15px] stroke-white" />,
     },
     {
       name: "linkedin",
-      href: "https://www.instagram.com/uithemez/",
+      href: "/",
       icon: <Linkedin className="w-[15px] h-[15px] stroke-white" />,
     },
     {
       name: "upwork",
-      href: "https://www.instagram.com/uithemez/",
+      href: "https://www.upwork.com/freelancers/~01293c969e4754c164?mp_source=share",
       icon: <ArrowUpRight className="w-[15px] h-[15px] stroke-white" />,
     },
   ];
