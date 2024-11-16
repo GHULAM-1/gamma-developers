@@ -41,7 +41,7 @@ export function DirectionAwareHoverDemo() {
                       >
                         <span>View</span>
                         <ArrowUpRight size={18} />
-                      </a>
+                      </a>  
                     </div>
                   </div>
                 </div>
