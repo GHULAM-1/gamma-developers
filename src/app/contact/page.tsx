@@ -16,7 +16,7 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import { formSubmission } from "@/serverActions/server-actions";
 import { Input } from "@/components/ui/input";
-
+import confetti from "canvas-confetti";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -35,7 +35,6 @@ const formSchema = z.object({
 
 export default function Contact() {
   const { toast } = useToast();
-  
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -54,10 +53,38 @@ export default function Contact() {
       title:
         "Form submitted, Thank you for contacting! We will reach out to you soon.",
     });
-    
-   
-    
+    ConfettiSideCannons();
     form.reset();
+  }
+
+  function ConfettiSideCannons() {
+    const end = Date.now() + 3 * 1000; // 3 seconds
+    const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
+
+    const frame = () => {
+      if (Date.now() > end) return;
+
+      confetti({
+        particleCount: 100, // Increase particle count for burst
+        angle: 60,
+        spread: 70, // Wider spread for burst effect
+        startVelocity: 80, // Increase velocity for more energetic burst
+        origin: { x: 0, y: 0.5 },
+        colors: colors,
+      });
+
+      // Burst effect from right cannon
+      confetti({
+        particleCount: 100, // Same burst from the other side
+        angle: 120,
+        spread: 70,
+        startVelocity: 80,
+        origin: { x: 1, y: 0.5 },
+        colors: colors,
+      });
+    };
+
+    frame();
   }
 
   const footerNavs = [
@@ -113,7 +140,7 @@ export default function Contact() {
             <div>
               <div className="text-[22px] mb-[15px]">Email</div>
               <div className="w-[242px] text-[16px] text-neutral-400">
-               contact@gammadevelopers.com
+                contact@gammadevelopers.com
               </div>
             </div>
           </div>
@@ -154,7 +181,8 @@ export default function Contact() {
                       <FormControl>
                         <Input
                           placeholder="Name"
-                          className="text-neutral-400 bg-black border-b-[1px] border-primary placeholder-primary border-opacity-30 text-[20px] pb-4"
+                          style={{ outline: "none", boxShadow: "none"}}
+                          className="text-neutral-400 bg-black border-b-[3px] border-white placeholder-primary border-opacity-90 text-[20px] focus:border-primary"
                           {...field}
                         />
                       </FormControl>
@@ -171,7 +199,8 @@ export default function Contact() {
                       <FormControl>
                         <Input
                           placeholder="Email"
-                          className="text-primary bg-black border-b-[1px] border-primary placeholder-primary border-opacity-30 text-[20px] pb-4"
+                          style={{ outline: "none", boxShadow: "none"}}
+                          className="text-neutral-400 bg-black border-b-[3px] border-white placeholder-primary border-opacity-90 text-[20px] focus:border-primary"
                           {...field}
                         />
                       </FormControl>
@@ -189,7 +218,8 @@ export default function Contact() {
                     <FormControl>
                       <Input
                         placeholder="Subject"
-                        className="text-primary bg-black border-b-[1px] border-primary placeholder-primary border-opacity-30 text-[20px] pb-4"
+                        style={{ outline: "none", boxShadow: "none"}}
+                          className="text-neutral-400 bg-black border-b-[3px] border-white border-opacity-90 text-[20px] focus:border-primary"
                         {...field}
                       />
                     </FormControl>
@@ -201,12 +231,13 @@ export default function Contact() {
                 control={form.control}
                 name="message"
                 render={({ field }) => (
-                  <FormItem>
+                  <FormItem className="mt-10">
                     <FormLabel>Message</FormLabel>
                     <FormControl>
                       <textarea
                         placeholder="Message"
-                        className="w-full text-primary bg-black border-b-[1px] border-primary placeholder-primary border-opacity-30 text-[22px] pb-1"
+                        style={{ outline: "none", boxShadow: "none"}}
+                          className= "w-full text-neutral-400 bg-black border-b-[1px] border-white border-opacity-90 text-[20px] pb-4 focus:border-primary focus:placeholder-primary"
                         {...field}
                       />
                     </FormControl>
@@ -215,7 +246,6 @@ export default function Contact() {
                 )}
               />
               <div className="flex mt-10">
-           
                 <Button
                   type="submit"
                   className="rounded-3xl bg-white text-black px-5 py-[7px] text-sm gap-2 hover:bg-primary"
@@ -223,7 +253,6 @@ export default function Contact() {
                   <span>Let's Talking</span>
                   <MoveUpRight className="w-[18px] h-[18px]" />
                 </Button>
-               
               </div>
             </form>
           </Form>
