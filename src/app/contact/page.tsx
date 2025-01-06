@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
-import { MoveUpRight } from "lucide-react";
+import { MoveUpRight, MoveUpRightIcon } from "lucide-react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -90,15 +90,15 @@ export default function Contact() {
   const footerNavs = [
     {
       name: "Instagram",
-      href: "/https://www.instagram.com/gammadevelopers/profilecard/?igsh=MXZlZzBmY2kwMGxucQ==",
+      href: "https://www.instagram.com/gammadevelopers/profilecard/?igsh=MXZlZzBmY2kwMGxucQ==",
     },
     {
       name: "Linkedin",
-      href: "/",
+      href: "https://www.linkedin.com/in/gamma-developers-28720a220/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Upwork",
-      href: "/https://www.upwork.com/freelancers/~01293c969e4754c164?mp_source=share",
+      href: "https://www.upwork.com/freelancers/~01293c969e4754c164?mp_source=share",
     },
   ];
 
@@ -134,18 +134,23 @@ export default function Contact() {
             <div>
               <div className="text-[22px] mb-[15px]">Address</div>
               <div className="w-[242px] text-[16px] text-neutral-400">
-                Besòs 1, 08174 Sant Cugat del Vallès, Barcelona
+                6th Floor, Arfa Software Technology Park, Ferozepur Road, Lahore
               </div>
             </div>
             <div>
               <div className="text-[22px] mb-[15px]">Email</div>
-              <div className="w-[242px] text-[16px] text-neutral-400">
-                contact@gammadevelopers.com
-              </div>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=gammadevelopers0@gmail.com"
+                target="_blank"
+              >
+                <div className="w-[242px] text-[16px] text-neutral-400">
+                  gammadevelopers0@gmail.com
+                </div>
+              </a>
             </div>
           </div>
           <div className="text-[30px] text-primary underline mt-[10px] mb-[30px]">
-            +92 (074) 593601
+          +92 (307) 4593601
           </div>
           <div className="flex gap-14">
             {footerNavs.map((nav) => {
@@ -181,8 +186,8 @@ export default function Contact() {
                       <FormControl>
                         <Input
                           placeholder="Name"
-                          style={{ outline: "none", boxShadow: "none"}}
-                          className="text-neutral-400 bg-black border-b-[3px] border-white placeholder-primary border-opacity-90 text-[20px] focus:border-primary"
+                          style={{ outline: "none", boxShadow: "none" }}
+                          className="text-neutral-400 bg-black border-[1px] border-white placeholder-primary border-opacity-90 text-[20px] focus:border-primary"
                           {...field}
                         />
                       </FormControl>
@@ -199,8 +204,8 @@ export default function Contact() {
                       <FormControl>
                         <Input
                           placeholder="Email"
-                          style={{ outline: "none", boxShadow: "none"}}
-                          className="text-neutral-400 bg-black border-b-[3px] border-white placeholder-primary border-opacity-90 text-[20px] focus:border-primary"
+                          style={{ outline: "none", boxShadow: "none" }}
+                          className="text-neutral-400 bg-black border-[1px] border-white placeholder-primary border-opacity-90 text-[20px] focus:border-primary"
                           {...field}
                         />
                       </FormControl>
@@ -218,8 +223,8 @@ export default function Contact() {
                     <FormControl>
                       <Input
                         placeholder="Subject"
-                        style={{ outline: "none", boxShadow: "none"}}
-                          className="text-neutral-400 bg-black border-b-[3px] border-white border-opacity-90 text-[20px] focus:border-primary"
+                        style={{ outline: "none", boxShadow: "none" }}
+                        className="text-neutral-400 bg-black border-[1px] border-white border-opacity-90 text-[20px] focus:border-primary"
                         {...field}
                       />
                     </FormControl>
@@ -236,8 +241,8 @@ export default function Contact() {
                     <FormControl>
                       <textarea
                         placeholder="Message"
-                        style={{ outline: "none", boxShadow: "none"}}
-                          className= "w-full text-neutral-400 bg-black border-b-[1px] border-white border-opacity-90 text-[20px] pb-4 focus:border-primary focus:placeholder-primary"
+                        style={{ outline: "none", boxShadow: "none" }}
+                        className="w-full text-neutral-400 bg-black border-b-[1px] border-white border-opacity-90 text-[20px] pb-4 focus:border-primary focus:placeholder-primary"
                         {...field}
                       />
                     </FormControl>
@@ -245,13 +250,13 @@ export default function Contact() {
                   </FormItem>
                 )}
               />
-              <div className="flex mt-10">
+              <div className="flex mt-10 group">
                 <Button
                   type="submit"
-                  className="rounded-3xl bg-white text-black px-5 py-[7px] text-sm gap-2 hover:bg-primary"
+                  className="rounded-3xl bg-white text-black px-5 py-[7px] text-sm gap-2 group-hover hover:bg-primary"
                 >
                   <span>Let's Talking</span>
-                  <MoveUpRight className="w-[18px] h-[18px]" />
+                  <MoveUpRightIcon className="w-[18px] h-[18px] group-hover:scale-125 transform transition-transform duration-300 ease-out" />
                 </Button>
               </div>
             </form>

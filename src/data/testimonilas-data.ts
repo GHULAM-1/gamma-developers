@@ -25,8 +25,7 @@ export const testimonialsData: testimonialsTypes[] = [
   {
     designation: "CEO Carter Digital",
     img: "/clients/lisa.jpeg",
-    message:
-      "Gamma Developers helped integrate a user-friendly drag-and-drop website builder for our clients, and the results were outstanding! Not only is the tool easy to use, but the support and guidance from their team were exceptional.",
-    name: "Lisa T",
+    message:"Ghulam was very helpful, responsive, and committed to delivering the promised work. Even when he was not certain of what approach was best, he took the time to research and provide the best solutions.",
+    name: "Florencia Barrera",
   },
 ];

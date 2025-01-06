@@ -27,17 +27,17 @@ export default function Footer() {
     {
       name: "instagram",
       href: "https://www.instagram.com/gammadevelopers/profilecard/?igsh=MXZlZzBmY2kwMGxucQ==",
-      icon: <Instagram className="w-[15px] h-[15px] stroke-white" />,
+      icon: <Instagram className="w-[23px] h-[19px] stroke-white" />,
     },
     {
       name: "linkedin",
-      href: "/",
-      icon: <Linkedin className="w-[15px] h-[15px] stroke-white" />,
+      href: "https://www.linkedin.com/in/gamma-developers-28720a220/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      icon: <Linkedin className="w-[23px] h-[19px] stroke-white" />,
     },
     {
       name: "upwork",
       href: "https://www.upwork.com/freelancers/~01293c969e4754c164?mp_source=share",
-      icon: <ArrowUpRight className="w-[15px] h-[15px] stroke-white" />,
+      icon: <p className="w-[23px] font-semibold mb-1 h-[19px] stroke-white">Up</p>,
     },
   ];
 
@@ -69,7 +69,7 @@ export default function Footer() {
           <div className="text-neutral-400">
             <div className="text-[12px] mb-[10px]">LOCATION</div>
             <div className="text-[16px] md:w-[297px] w-full">
-              152 Thatcher Road St, Mahattan, NY 10463, US
+            6th Floor, Arfa Software Technology Park, Ferozepur Road, Lahore
             </div>
             <div className="flex gap-4 mt-4">
               {socials.map((soc) => (
@@ -85,8 +85,10 @@ export default function Footer() {
           </div>
           <div className="text-neutral-400">
             <div className="text-[12px] mb-[10px]">INQUIRY</div>
-            <div className="text-[16px]">contact@gammadevelopers.com</div>
-            <div className="text-[16px]">+92(304)5570099</div>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gammadevelopers0@gmail.com" target="_blank">
+            <div className="text-[16px]">gammadevelopers0@gmail.com</div>
+            </a>
+            <div className="text-[16px]">+92 (307) 4593601</div>
           </div>
         </div>
 

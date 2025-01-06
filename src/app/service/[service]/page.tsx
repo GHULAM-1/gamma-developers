@@ -8,35 +8,37 @@ import { SubTypesGrid } from "@/components/sub-types-grid";
 import { SupportGrid } from "@/components/support-grid";
 import Stack from "@/components/stack";
 import OurProcess from "@/components/our-process";
-export default function Service({ params }: { params: { service: string } }) {
-  console.log(params.service);
-  const data: servicePageDataType | undefined = giveServiceData(params.service);
-  console.log(data);
+import { notFound } from "next/navigation";
+
+export default async function Service({ params }: { params: { service: string } }) {
+  const data: servicePageDataType | undefined = await giveServiceData(params.service);
+
+  if (!data) {
+    notFound(); // This will trigger the 404 page
+  }
+
   return (
     <div className="w-full flex flex-col max-w-[1365px]">
-      <PageHeading
-        heading={data?.mainHeading}
-        description={data?.description}
-      />
-      <ServicesMarquee content={data?.marqueeContent} />
+      <PageHeading heading={data.mainHeading} description={data.description} />
+      <ServicesMarquee content={data.marqueeContent} />
 
       <div className="mt-20">
         <SectionDivider text="Our Stack" isViewMore={false} />
       </div>
       <div className="mb-40">
-        <Stack data={data?.stackData} />
+        <Stack data={data.stackData} />
       </div>
       <SectionDivider text="Type of Apps " isViewMore={false} />
-      <SubTypesGrid data={data?.subTypesData} />
+      <SubTypesGrid data={data.subTypesData} />
 
       <div className="mt-44">
-        <OurProcess data={data?.processData} />
+        <OurProcess data={data.processData} />
       </div>
       <div className="mt-44">
         <SectionDivider text="Deliverables" isViewMore={false} />
       </div>
       <div className="mb-32">
-        <SupportGrid data={data?.supportData} />
+        <SupportGrid data={data.supportData} />
       </div>
     </div>
   );

@@ -456,6 +456,153 @@ export const design: servicePageDataType = {
     },
   ],
 };
+export const ai: servicePageDataType = {
+  mainHeading: "We don’t just build AI, we build AI that TRANSFORMS THE FUTURE!",
+  description:
+    "We craft innovative AI experiences through intelligent algorithms and deep learning, turning raw data into groundbreaking insights that spark innovation, drive efficiency, and redefine possibilities for a smarter, more connected world.",
+  marqueeContent: [" GenAI  ", " GenAI  ", " GenAI  "],
+  
+  subTypesData: [
+    {
+      title: "AI-Powered Interaction Design",
+      description:
+        "Crafting intuitive and seamless AI-driven interactions that learn and adapt to user behavior.",
+    },
+    {
+      title: "AI Visual Design",
+      description:
+        "Using AI to enhance the aesthetics of the interface, from layout to color palettes, creating visually dynamic experiences.",
+    },
+    {
+      title: "AI-Enhanced Information Architecture",
+      description:
+        "Leveraging AI to intelligently structure and organize content, improving user navigation and content discovery.",
+    },
+    {
+      title: "AI-Driven User Research",
+      description:
+        "Utilizing AI to analyze user data, predict behaviors, and uncover pain points to inform design decisions.",
+    },
+    {
+      title: "Smart Wireframing",
+      description:
+        "Designing dynamic wireframes powered by AI to automatically adjust layout and structure based on user feedback.",
+    },
+    {
+      title: "AI Prototyping",
+      description:
+        "Creating interactive prototypes that simulate real-time user interactions with AI-driven, data-informed feedback loops.",
+    },
+    {
+      title: "Adaptive AI Design",
+      description:
+        "Building responsive designs that use AI to adapt seamlessly to users’ preferences and various screen sizes.",
+    },
+    {
+      title: "AI Usability Testing",
+      description:
+        "Conducting AI-powered usability tests that simulate user behavior, identifying issues and improving user interface intuitiveness.",
+    },
+  ],
+  
+  supportData: [
+    {
+      title: "Built for developers",
+      description:
+        "Crafted specifically for engineers, developers, and innovators who push boundaries. Our tools are designed to empower those who build the future.",
+      icon: <TbTerminal2 />, // Updated icon
+    },
+    {
+      title: "Ease of use",
+      description:
+        "Our solutions are intuitive and user-friendly, allowing you to focus on creation rather than complexity. No steep learning curves—just results.",
+      icon: <TbEaseInOut />, // Updated icon
+    },
+    {
+      title: "Pricing like no other",
+      description:
+        "Competitive pricing with no hidden fees. What you see is what you get—clear, fair, and flexible for businesses of all sizes.",
+      icon: <TbCurrencyDollar />, // Updated icon
+    },
+    {
+      title: "Performance Optimization",
+      description: "Speed and efficiency are key. We built to maximize performance, ensuring fast load optimized resource usage for all your operations.",
+      icon: <TbCloud />, // Updated icon
+    },
+    {
+      title: "Security First",
+      description: "Your data is safe with us. We prioritize security, ensuring that all systems are protected with the latest encryption and safeguards to keep your information secure.",
+      icon: <TbRoute />, // Updated icon
+    },
+    {
+      title: "24/7 Customer Support",
+      description:
+        "Round-the-clock support from our expert team. Whether it’s day or night, we’re here to help whenever you need us.",
+      icon: <TbHelp />, // Updated icon
+    },
+    {
+      title: "Custom Integrations",
+      description:
+        "Seamlessly integrate with your existing tools and platforms. We provide custom solutions that work in harmony with your current systems to streamline workflows.",
+      icon: <TbAdjustmentsBolt />, // Updated icon
+    },
+    {
+      title: "User-Centric Design",
+      description: "Your users come first. Every product we deliver is designed with the end-user in mind, ensuring an intuitive, seamless experience that keeps them engaged.",
+      icon: <TbHeart />, // Updated icon
+    },
+  ],
+  stackData: [
+    {
+      name: "OPENAI",
+      image: "/stack-icons/openai-color.svg",
+      brandColor: "#412991",
+      colors: [65, 41, 145],
+    },
+    {
+      name: "LANGCHAIN",
+      image: "/stack-icons/langchain-color.svg",
+      brandColor: "#1C3C3C",
+      colors: [0, 100, 0],
+    },
+    {
+      name: "TAILWIND",
+      image: "/stack-icons/tailwindcss-color.svg",
+      brandColor: "#FF9900",
+      colors: [255, 153, 0],
+    },
+
+    {
+      name: "REACT",
+      image: "/stack-icons/react-color.svg",
+      brandColor: "#61DAFB",
+      colors: [97, 218, 251],
+    },
+    {
+      name: "NEXTJS",
+      image: "/stack-icons/nextjs-color.svg",
+      brandColor: "#FFFFFF8A",
+      colors: [192, 192, 192],
+    },
+  ],
+  processData: [
+    {
+      number: 1,
+      title: "Website Development",
+      description: "We build a website that will help your brand grow.",
+    },
+    {
+      number: 2,
+      title: "Social Media Marketing",
+      description: "We build a website that will help your brand grow.",
+    },
+    {
+      number: 3,
+      title: "Content Marketing",
+      description: "We build a website that will help your brand grow.",
+    },
+  ],
+};
 
 export type servicePageDataType = {
   mainHeading: string;

@@ -799,4 +799,189 @@ export const portfolioPageData: portfolioPageDataType[] = [
       // },
     ],
   },
+  {
+    portfolioStackData: [
+      {
+        name: "NEXTJS",
+        image: "/stack-icons/nextjs-color.svg",
+        brandColor: "#FFFFFF8A",
+        colors: [192, 192, 192],
+      },
+      {
+        name: "TAILWINDCSS",
+        image: "/stack-icons/tailwindcss-color.svg",
+        brandColor: "#06B6D4",
+        colors: [6, 182, 212],
+      },
+      {
+        name: "FIGMA",
+        image: "/stack-icons/figma-color.svg",
+        brandColor: "#F24E1E",
+        colors: [242, 78, 30],
+      },
+      {
+        name: "TYPESCRIPT",
+        image: "/stack-icons/ts-color.svg",
+        brandColor: "#3178C6",
+        colors: [49, 120, 198],
+      },
+
+      {
+        name: "REACT",
+        image: "/stack-icons/react-color.svg",
+        brandColor: "#61DAFB",
+        colors: [97, 218, 251],
+      },
+    ],
+    tags: ["UIUX", "DEV", "SEO", "WEB DEV"],
+    slug: "eleventh-portfolio",
+    title: "SanTech",
+    desc: "Ali Khan crafting new bright brands, unique visual systems, and digital experiences focused on a wide range of original collabs.",
+    image: "/collages/san.png",
+    purpose: "To showcase creative design and development skills.",
+    pinDetails: [
+      { title: "Client", value: "SanTech" },
+      { title: "Year", value: "2024" },
+      { title: "Role", value: " Developer" },
+      { title: "Platform", value: "Agency" },
+    ],
+    bigImage:
+      "/potfolio-banners/san1.png",
+    ladderData: [
+      {
+        title: "Design Process",
+        desc: "A detailed overview of the design process, from concept to final product.",
+        image: "/collages/san.png",
+        points: [
+          {
+            heading: "Research",
+            explanation:
+              "We listen to user stories to understand pain points, providing a rough estimate of cost and timeframe based on the insights gathered.",
+          },
+         
+          {
+            heading: "Wireframing",
+            explanation:
+              "Created wireframes to outline the structure and layout.",
+          },
+          {
+            heading: "Implementation",
+            explanation:
+              "After the concept is finalized, we move into the implementation phase, turning the prototype into a fully functional product",
+          },
+        ],
+      },
+
+      // {
+      //   title: "Design Process",
+      //   desc: "A detailed overview of the design process, from concept to final product.",
+      //   image: "/collages/ali-kan.png",
+      //   points: [
+      //     {
+      //       heading: "Research",
+      //       explanation:
+      //         "Conducted thorough market research to inform design choices.",
+      //     },
+      //     {
+      //       heading: "Wireframing",
+      //       explanation:
+      //         "Created wireframes to outline the structure and layout.",
+      //     },
+      //   ],
+      // },
+    ],
+  },
+  {
+    portfolioStackData: [
+      {
+        name: "NEXTJS",
+        image: "/stack-icons/nextjs-color.svg",
+        brandColor: "#FFFFFF8A",
+        colors: [192, 192, 192],
+      },
+      {
+        name: "TAILWINDCSS",
+        image: "/stack-icons/tailwindcss-color.svg",
+        brandColor: "#06B6D4",
+        colors: [6, 182, 212],
+      },
+      {
+        name: "FIGMA",
+        image: "/stack-icons/figma-color.svg",
+        brandColor: "#F24E1E",
+        colors: [242, 78, 30],
+      },
+      {
+        name: "TYPESCRIPT",
+        image: "/stack-icons/ts-color.svg",
+        brandColor: "#3178C6",
+        colors: [49, 120, 198],
+      },
+
+      {
+        name: "REACT",
+        image: "/stack-icons/react-color.svg",
+        brandColor: "#61DAFB",
+        colors: [97, 218, 251],
+      },
+    ],
+    tags: ["UIUX", "DEV", "SEO", "WEB DEV"],
+    slug: "tenth-portfolio",
+    title: "Meter",
+    desc: "Ali Khan crafting new bright brands, unique visual systems, and digital experiences focused on a wide range of original collabs.",
+    image: "/collages/meter.png",
+    purpose: "To showcase creative design and development skills.",
+    pinDetails: [
+      { title: "Client", value: "Meter" },
+      { title: "Year", value: "2024" },
+      { title: "Role", value: " Developer" },
+      { title: "Platform", value: "Agency" },
+    ],
+    bigImage:
+      "/potfolio-banners/meter1.png",
+    ladderData: [
+      {
+        title: "Design Process",
+        desc: "A detailed overview of the design process, from concept to final product.",
+        image: "/collages/meter.png",
+        points: [
+          {
+            heading: "Research",
+            explanation:
+              "We listen to user stories to understand pain points, providing a rough estimate of cost and timeframe based on the insights gathered.",
+          },
+         
+          {
+            heading: "Wireframing",
+            explanation:
+              "Created wireframes to outline the structure and layout.",
+          },
+          {
+            heading: "Implementation",
+            explanation:
+              "After the concept is finalized, we move into the implementation phase, turning the prototype into a fully functional product",
+          },
+        ],
+      },
+
+      // {
+      //   title: "Design Process",
+      //   desc: "A detailed overview of the design process, from concept to final product.",
+      //   image: "/collages/ali-kan.png",
+      //   points: [
+      //     {
+      //       heading: "Research",
+      //       explanation:
+      //         "Conducted thorough market research to inform design choices.",
+      //     },
+      //     {
+      //       heading: "Wireframing",
+      //       explanation:
+      //         "Created wireframes to outline the structure and layout.",
+      //     },
+      //   ],
+      // },
+    ],
+  },
+
 ];

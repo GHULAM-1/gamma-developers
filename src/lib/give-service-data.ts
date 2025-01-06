@@ -1,4 +1,4 @@
-import { web, mobile, design } from "../data/services-data";
+import { web, mobile, design, ai } from "../data/services-data";
 import { servicePageDataType } from "../data/services-data";
 export default function giveServiceData(
   serviceSlug: string
@@ -12,8 +12,10 @@ export default function giveServiceData(
         return mobile;
       case "design":
         return design;
+      case "ai":
+        return ai;
     }
   } else {
-    return web;
+    return undefined;
   }
 }

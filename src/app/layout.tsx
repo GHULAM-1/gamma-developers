@@ -5,6 +5,7 @@ import NavBar from "../components/nav-bar";
 import Footer from "@/components/footer";
 import Ham from "@/components/ham";
 import { Toaster } from "@/components/ui/toaster";
+import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,8 @@ export default function RootLayout({
       <body
         className={`${inter.className} w-full bg-grid-white/[0.04] overflow-x-hidden bg-black px-4 py-2 md:p-7 flex flex-col justify-center items-center text-white`}
       >
+                <NextTopLoader color="#D0FF71"/>
+
         {/* Show NavBar on screens larger than md and hide Ham */}
         <div className="hidden md:flex w-full">
           <NavBar />
