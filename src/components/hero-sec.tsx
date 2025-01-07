@@ -53,14 +53,14 @@ export default function Hero() {
   };
 
   return (
-    <div className="text-white px-5  max-w-[1365px] w-screen h-full md:h-screen gap-5 md:justify-center flex mb-16 xl:flex-row flex-col tracking-tighter items-start xl:items-center">
+    <div className="text-white px-5  max-w-[1365px] w-screen h-full md:h-screen gap-5 md:justify-center flex mb-16 lg:flex-row flex-col tracking-tighter items-start lg:items-center">
       <Spotlight
         className="top-[10px] left-0 md:left-30 md:-top-0"
         fill="#D0FF71"
       />
-      <div className="flex flex-col leading-[1.25] lg:mr-[3.5rem] w-[50%]">
+      <div className="flex flex-col leading-[1.25]  w-[50%]">
         <p
-          className={`text-[50px] cursor-pointer sm:text-[70px] xl:text-[100px] ${
+          className={`text-[50px] cursor-pointer sm:text-[70px] lg:text-[100px] ${
             currentIndex === 0 ? "text-primary" : "text-white"
           }`}
           onMouseEnter={() => handleMouseEnter(0)}
@@ -69,16 +69,16 @@ export default function Hero() {
           Design
         </p>
         <p
-          className={`text-[50px] cursor-pointer sm:text-[70px] xl:text-[100px] ${
+          className={`text-[50px] cursor-pointer sm:text-[70px] lg:text-[100px] ${
             currentIndex === 1 ? "text-primary" : "text-white"
           }`}
           onMouseEnter={() => handleMouseEnter(1)}
           onMouseLeave={handleMouseLeave}
         >
-          Development
+          Develop
         </p>
         <p
-          className={`text-[50px] cursor-pointer sm:text-[70px] xl:text-[100px] ${
+          className={`text-[50px] cursor-pointer sm:text-[70px] lg:text-[100px] ${
             currentIndex === 2 ? "text-primary" : "text-white"
           }`}
           onMouseEnter={() => handleMouseEnter(2)}
@@ -87,7 +87,7 @@ export default function Hero() {
           Grow
         </p>
       </div>
-      <div className="flex flex-col w-[100%] md:w-[70%] h-auto xl:w-[50%] items-right ml-0 xl:ml-10">
+      <div className="flex flex-col w-[100%] md:w-[70%] h-auto lg:w-[50%] items-right">
         <div className="relative w-full h-[230px] rounded overflow-hidden">
           <img
             src="/heroImage.jpg"

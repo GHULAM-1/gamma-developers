@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { MoveUpRight, MoveUpRightIcon } from "lucide-react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -17,6 +17,7 @@ import { useToast } from "@/hooks/use-toast";
 import { formSubmission } from "@/serverActions/server-actions";
 import { Input } from "@/components/ui/input";
 import confetti from "canvas-confetti";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -35,7 +36,15 @@ const formSchema = z.object({
 
 export default function Contact() {
   const { toast } = useToast();
-
+  const [isIframeLoaded, setIsIframeLoaded] = useState(false);
+  const [showSkeleton, setShowSkeleton] = useState(true);
+  useEffect(() => {
+    if (isIframeLoaded) {
+      // Add a delay before removing the skeleton
+      const timeout = setTimeout(() => setShowSkeleton(false), 500); // 500ms delay
+      return () => clearTimeout(timeout); // Cleanup the timeout
+    }
+  }, [isIframeLoaded]);
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -107,13 +116,19 @@ export default function Contact() {
       <div className="text-center text-[48px] md:text-[120px] text-white mt-2 md:mt-20 font-bold mb-8">
         GET IN TOUCH
       </div>
-      <div className="flex justify-center w-screen">
+      <div className="flex justify-center w-screen relative">
+        {showSkeleton && (
+          <Skeleton className="absolute inset-0 w-[98%] h-64 mx-6 md:h-96 lg:h-[550px] grayscale rounded-3xl" />
+        )}
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.7605317111897!2d74.33999707506752!3d31.475772949345114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919042715f767ad%3A0xb0251034ce47145e!2sARFA%20Tower%2C%20Lahore%20%E2%80%93%20Kasur%20Rd%2C%20Nishtar%20Town%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1725144937661!5m2!1sen!2s"
-          className="w-[98%] h-64 mx-6 md:h-96 lg:h-[550px] grayscale rounded-3xl"
+          className={`w-[98%] h-64 mx-6 md:h-96 lg:h-[550px] grayscale rounded-3xl ${isIframeLoaded ? "opacity-1" : "opacity-0"
+            }`}
+          onLoad={() => setIsIframeLoaded(true)}
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          style={{ transition: "opacity 0.5s ease-in-out" }}
         ></iframe>
       </div>
       <div className="flex flex-col md:flex-row max-w-[1365px] w-full justify-between gap-14 py-[140px]">
@@ -150,7 +165,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="text-[30px] text-primary underline mt-[10px] mb-[30px]">
-          +92 (307) 4593601
+            +92 (307) 4593601
           </div>
           <div className="flex gap-14">
             {footerNavs.map((nav) => {

@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} w-full bg-grid-white/[0.04] overflow-x-hidden bg-black px-4 py-2 md:p-7 flex flex-col justify-center items-center text-white`}
       >
-                <NextTopLoader color="#D0FF71"/>
+                <NextTopLoader color="#D0FF71" showSpinner={false}/>
 
         {/* Show NavBar on screens larger than md and hide Ham */}
         <div className="hidden md:flex w-full">
