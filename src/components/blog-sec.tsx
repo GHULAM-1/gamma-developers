@@ -3,7 +3,10 @@ import SectionDivider from "./section-divider";
 import { blogCardsDataT, BlogType } from "@/types/all-types";
 // import { blogsDummyData } from "@/data/all-blog-data";
 import BlogCard from "./blog-card";
+
+
 export default function BlogSec({ data }: { data: blogCardsDataT[] }) {
+  console.log(data);
   return (
     <>
       <div className="max-w-[1365px] w-full flex flex-col justify-center items-center mb-2 mt-8 md:mt-0 md:mb-24">
@@ -14,6 +17,7 @@ export default function BlogSec({ data }: { data: blogCardsDataT[] }) {
               <div className=" flex flex-row gap-0 md:gap-12">
                 <BlogCard
                   authorName={blog.authorName}
+                  authorImage={blog.authorImage}
                   bannerImage={blog.bannerImage}
                   estimatedReadingTime={blog.estimatedReadingTime}
                   mainHeading={blog.mainHeading}

@@ -11,6 +11,7 @@ export default function BlogCard({
   bannerImage,
   estimatedReadingTime,
   mainHeading,
+  authorImage,
   publishedAt,
   slug,
   tag,
@@ -25,8 +26,8 @@ export default function BlogCard({
       <div className="flex justify-between w-full">
         <div className="flex w-full gap-3">
           <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-            <AvatarFallback>{authorName}</AvatarFallback>
+            <AvatarImage src={authorImage} className="h-[195%]" alt="@shadcn" />
+            {/* <AvatarFallback>{authorName}</AvatarFallback> */}
           </Avatar>
           <div className="flex flex-col text-[13px]">
             <div>{authorName}</div>
