@@ -34,22 +34,22 @@ const teamMembers: ourTeamTypes[] = [
       </a>,
     ],
   },
-  {
-    img: "ibrahim.png",
-    name: "M.Ibrahim",
-    designation: "Co Founder",
-    icons: [
-      <a href="https://www.linkedin.com/in/ibrahim-ch-031607323/" target="_blank" rel="noopener noreferrer">
-        <LinkedinIcon />
-      </a>,
-      <a href="https://github.com/IbrahimChaudhary" target="_blank" rel="noopener noreferrer">
-        <GithubIcon />
-      </a>,
-      <a href="https://www.instagram.com/.chaudharyy/profilecard/?igsh=MWFmMGRpMWZubWkzNA==" target="_blank" rel="noopener noreferrer">
-        <InstagramIcon />
-      </a>,
-    ],
-  },
+  // {
+  //   img: "ibrahim.png",
+  //   name: "M.Ibrahim",
+  //   designation: "Co Founder",
+  //   icons: [
+  //     <a href="https://www.linkedin.com/in/ibrahim-ch-031607323/" target="_blank" rel="noopener noreferrer">
+  //       <LinkedinIcon />
+  //     </a>,
+  //     <a href="https://github.com/IbrahimChaudhary" target="_blank" rel="noopener noreferrer">
+  //       <GithubIcon />
+  //     </a>,
+  //     <a href="https://www.instagram.com/.chaudharyy/profilecard/?igsh=MWFmMGRpMWZubWkzNA==" target="_blank" rel="noopener noreferrer">
+  //       <InstagramIcon />
+  //     </a>,
+  //   ],
+  // },
 ];
 
 export default teamMembers;
