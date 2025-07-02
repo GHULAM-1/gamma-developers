@@ -1,6 +1,6 @@
 "use client";
-import React, { useState, useRef } from "react";
-import { MoveUpRight } from "lucide-react";
+import React, { useState, useRef, useEffect } from "react";
+import { MoveUpRight, MoveUpRightIcon } from "lucide-react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -16,7 +16,8 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import { formSubmission } from "@/serverActions/server-actions";
 import { Input } from "@/components/ui/input";
-
+import confetti from "canvas-confetti";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -35,8 +36,15 @@ const formSchema = z.object({
 
 export default function Contact() {
   const { toast } = useToast();
-  
-
+  const [isIframeLoaded, setIsIframeLoaded] = useState(false);
+  const [showSkeleton, setShowSkeleton] = useState(true);
+  useEffect(() => {
+    if (isIframeLoaded) {
+      // Add a delay before removing the skeleton
+      const timeout = setTimeout(() => setShowSkeleton(false), 500); // 500ms delay
+      return () => clearTimeout(timeout); // Cleanup the timeout
+    }
+  }, [isIframeLoaded]);
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -54,24 +62,52 @@ export default function Contact() {
       title:
         "Form submitted, Thank you for contacting! We will reach out to you soon.",
     });
-    
-   
-    
+    ConfettiSideCannons();
     form.reset();
+  }
+
+  function ConfettiSideCannons() {
+    const end = Date.now() + 3 * 1000; // 3 seconds
+    const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
+
+    const frame = () => {
+      if (Date.now() > end) return;
+
+      confetti({
+        particleCount: 100, // Increase particle count for burst
+        angle: 60,
+        spread: 70, // Wider spread for burst effect
+        startVelocity: 80, // Increase velocity for more energetic burst
+        origin: { x: 0, y: 0.5 },
+        colors: colors,
+      });
+
+      // Burst effect from right cannon
+      confetti({
+        particleCount: 100, // Same burst from the other side
+        angle: 120,
+        spread: 70,
+        startVelocity: 80,
+        origin: { x: 1, y: 0.5 },
+        colors: colors,
+      });
+    };
+
+    frame();
   }
 
   const footerNavs = [
     {
       name: "Instagram",
-      href: "/https://www.instagram.com/gammadevelopers/profilecard/?igsh=MXZlZzBmY2kwMGxucQ==",
+      href: "https://www.instagram.com/gammadevelopers/profilecard/?igsh=MXZlZzBmY2kwMGxucQ==",
     },
     {
       name: "Linkedin",
-      href: "/",
+      href: "https://www.linkedin.com/in/gamma-developers-28720a220/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Upwork",
-      href: "/https://www.upwork.com/freelancers/~01293c969e4754c164?mp_source=share",
+      href: "https://www.upwork.com/freelancers/~01293c969e4754c164?mp_source=share",
     },
   ];
 
@@ -80,13 +116,19 @@ export default function Contact() {
       <div className="text-center text-[48px] md:text-[120px] text-white mt-2 md:mt-20 font-bold mb-8">
         GET IN TOUCH
       </div>
-      <div className="flex justify-center w-screen">
+      <div className="flex justify-center w-screen relative">
+        {showSkeleton && (
+          <Skeleton className="absolute inset-0 w-[98%] h-64 mx-6 md:h-96 lg:h-[550px] grayscale rounded-3xl" />
+        )}
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.7605317111897!2d74.33999707506752!3d31.475772949345114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919042715f767ad%3A0xb0251034ce47145e!2sARFA%20Tower%2C%20Lahore%20%E2%80%93%20Kasur%20Rd%2C%20Nishtar%20Town%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1725144937661!5m2!1sen!2s"
-          className="w-[98%] h-64 mx-6 md:h-96 lg:h-[550px] grayscale rounded-3xl"
+          className={`w-[98%] h-64 mx-6 md:h-96 lg:h-[550px] grayscale rounded-3xl ${isIframeLoaded ? "opacity-1" : "opacity-0"
+            }`}
+          onLoad={() => setIsIframeLoaded(true)}
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          style={{ transition: "opacity 0.5s ease-in-out" }}
         ></iframe>
       </div>
       <div className="flex flex-col md:flex-row max-w-[1365px] w-full justify-between gap-14 py-[140px]">
@@ -107,18 +149,23 @@ export default function Contact() {
             <div>
               <div className="text-[22px] mb-[15px]">Address</div>
               <div className="w-[242px] text-[16px] text-neutral-400">
-                Besòs 1, 08174 Sant Cugat del Vallès, Barcelona
+                6th Floor, Arfa Software Technology Park, Ferozepur Road, Lahore
               </div>
             </div>
             <div>
               <div className="text-[22px] mb-[15px]">Email</div>
-              <div className="w-[242px] text-[16px] text-neutral-400">
-               contact@gammadevelopers.com
-              </div>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=gammadevelopers0@gmail.com"
+                target="_blank"
+              >
+                <div className="w-[242px] text-[16px] text-neutral-400">
+                  gammadevelopers0@gmail.com
+                </div>
+              </a>
             </div>
           </div>
           <div className="text-[30px] text-primary underline mt-[10px] mb-[30px]">
-            +92 (074) 593601
+            +92 (307) 4593601
           </div>
           <div className="flex gap-14">
             {footerNavs.map((nav) => {
@@ -154,7 +201,8 @@ export default function Contact() {
                       <FormControl>
                         <Input
                           placeholder="Name"
-                          className="text-neutral-400 bg-black border-b-[1px] border-primary placeholder-primary border-opacity-30 text-[20px] pb-4"
+                          style={{ outline: "none", boxShadow: "none" }}
+                          className="text-neutral-400 bg-black border-[1px] border-white placeholder-primary border-opacity-90 text-[20px] focus:border-primary"
                           {...field}
                         />
                       </FormControl>
@@ -171,7 +219,8 @@ export default function Contact() {
                       <FormControl>
                         <Input
                           placeholder="Email"
-                          className="text-primary bg-black border-b-[1px] border-primary placeholder-primary border-opacity-30 text-[20px] pb-4"
+                          style={{ outline: "none", boxShadow: "none" }}
+                          className="text-neutral-400 bg-black border-[1px] border-white placeholder-primary border-opacity-90 text-[20px] focus:border-primary"
                           {...field}
                         />
                       </FormControl>
@@ -189,7 +238,8 @@ export default function Contact() {
                     <FormControl>
                       <Input
                         placeholder="Subject"
-                        className="text-primary bg-black border-b-[1px] border-primary placeholder-primary border-opacity-30 text-[20px] pb-4"
+                        style={{ outline: "none", boxShadow: "none" }}
+                        className="text-neutral-400 bg-black border-[1px] border-white border-opacity-90 text-[20px] focus:border-primary"
                         {...field}
                       />
                     </FormControl>
@@ -201,12 +251,13 @@ export default function Contact() {
                 control={form.control}
                 name="message"
                 render={({ field }) => (
-                  <FormItem>
+                  <FormItem className="mt-10">
                     <FormLabel>Message</FormLabel>
                     <FormControl>
                       <textarea
                         placeholder="Message"
-                        className="w-full text-primary bg-black border-b-[1px] border-primary placeholder-primary border-opacity-30 text-[22px] pb-1"
+                        style={{ outline: "none", boxShadow: "none" }}
+                        className="w-full text-neutral-400 bg-black border-b-[1px] border-white border-opacity-90 text-[20px] pb-4 focus:border-primary focus:placeholder-primary"
                         {...field}
                       />
                     </FormControl>
@@ -214,16 +265,14 @@ export default function Contact() {
                   </FormItem>
                 )}
               />
-              <div className="flex mt-10">
-           
+              <div className="flex mt-10 group">
                 <Button
                   type="submit"
-                  className="rounded-3xl bg-white text-black px-5 py-[7px] text-sm gap-2 hover:bg-primary"
+                  className="rounded-3xl bg-white text-black px-5 py-[7px] text-sm gap-2 group-hover hover:bg-primary"
                 >
                   <span>Let's Talking</span>
-                  <MoveUpRight className="w-[18px] h-[18px]" />
+                  <MoveUpRightIcon className="w-[18px] h-[18px] group-hover:scale-125 transform transition-transform duration-300 ease-out" />
                 </Button>
-               
               </div>
             </form>
           </Form>

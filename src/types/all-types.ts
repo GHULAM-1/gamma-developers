@@ -77,6 +77,7 @@ export type processTypes = {
 
 export type blogCardsDataT = {
   authorName: string;
+  authorImage:string;
   bannerImage: string;
   estimatedReadingTime: string;
   mainHeading: string;

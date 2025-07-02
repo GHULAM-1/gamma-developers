@@ -8,7 +8,7 @@ export default function PortfolioPage() {
     <>
       <div className="max-w-[1365px] w-full flex flex-col justify-center items-center">
         <PageHeading
-          description=" our portfolio reflects innovative software solutions that solve real-world problems. From robust web and mobile apps to AI-driven platforms, each project is designed to push boundaries and deliver measurable results. Explore how we’ve helped businesses transform with cutting-edge technology and development expertise."
+          description="Where innovation drives real impact. We tackle complex challenges with cutting-edge development expertise, delivering scalable solutions from web to AI. Our mission is clear: build exceptional software that powers business success. See how we're shaping the digital future."
           heading="We Don’t Just Showcase Work, We Build Solutions That Drive Success."
         />
         <div className="mt-14 w-full">

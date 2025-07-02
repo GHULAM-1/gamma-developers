@@ -3,7 +3,7 @@ import createImageUrlBuilder from "@sanity/image-url";
 import { dataset, projectId } from "../env";
 
 const imageBuilder = createImageUrlBuilder({
-  projectId: "j04h1g84" || "",
+  projectId: "irh00nd4" || "",
   dataset: "production" || "",
 });
 

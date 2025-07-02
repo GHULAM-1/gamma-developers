@@ -13,10 +13,6 @@ export default function AboutUs() {
 
         <AboutUsHero/>
         <ScrollBasedVelocityDemo />
-        <div>
-        <video autoPlay loop muted  src="/about-us.mp4" className="w-full h-auto"></video>
-
-        </div>
         <WhoWeAre />
         <OurTeam />
         <TestimonialCarousel />

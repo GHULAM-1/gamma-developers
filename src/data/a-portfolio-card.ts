@@ -48,7 +48,16 @@ const PortfolioCard9 : PortfolioCardType = {
     name: "spotmedia",
     image: "/collages/spotmedia.png",
 }
-
+const PortfolioCard10 : PortfolioCardType = {
+    id:9,
+    name: "spotmedia",
+    image: "/collages/spotmedia.png",
+}
+const PortfolioCard11 : PortfolioCardType = {
+    id:9,
+    name: "spotmedia",
+    image: "/collages/spotmedia.png",
+}
 export const AllPortfolioCardsData: PortfolioCardType[] = [
     PortfolioCard1,
     PortfolioCard2,
@@ -58,5 +67,7 @@ export const AllPortfolioCardsData: PortfolioCardType[] = [
     PortfolioCard4,
     PortfolioCard7,
     PortfolioCard8,
-    PortfolioCard9
+    PortfolioCard9,
+    PortfolioCard10,
+    PortfolioCard11
 ]   
