@@ -51,7 +51,7 @@ export default function OurProjects() {
           {allProjects.map((project, index) => (
             <div
               key={index}
-              className="flex flex-col gap-6 rounded-[28px] bg-[#191919] p-6"
+              className="group flex flex-col gap-6 rounded-[28px] bg-[#191919] p-6 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:bg-[#222222]"
             >
               <div className="overflow-hidden rounded-2xl">
                 <Image
@@ -59,7 +59,7 @@ export default function OurProjects() {
                   alt={project.title}
                   width={576}
                   height={327}
-                  className="h-auto w-full object-cover"
+                  className="h-auto w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                 />
               </div>
               <div className="flex flex-col gap-8 px-2">
@@ -90,8 +90,8 @@ export default function OurProjects() {
                       />
                     </span>
                   </div>
-                  <Link href={project.caseStudyUrl} className="outline-none ">
-                    <InteractiveHoverButton className="outline-none focus:outline-none focus:ring-0 border-[var(--border-light)] px-4 py-3 text-xs sm:px-6 sm:py-2 sm:text-sm lg:px-8 ">
+                  <Link href={project.caseStudyUrl} className="outline-none">
+                    <InteractiveHoverButton className="border-[var(--border-light)] px-4 py-3 text-xs outline-none focus:outline-none focus:ring-0 sm:px-6 sm:py-2 sm:text-sm lg:px-8">
                       View Case Study
                     </InteractiveHoverButton>
                   </Link>
