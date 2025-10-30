@@ -1,0 +1,24 @@
+
+"use client";
+
+import { defineConfig } from "sanity";
+import { visionTool } from "@sanity/vision";
+import { structureTool } from "sanity/structure";
+import { apiVersion, dataset, projectId } from "./src/sanity/env";
+import { schema } from "./src/sanity/schemaTypes";
+import { structure } from "./src/sanity/structure";
+
+export default defineConfig({
+  name: "default",
+  title: "My Sanity CMS",
+  basePath: "/",
+
+  projectId,
+  dataset,
+  schema,
+
+  plugins: [
+    structureTool({structure}),
+    visionTool({ defaultApiVersion: apiVersion }),
+  ],
+});

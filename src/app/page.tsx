@@ -1,21 +1,9 @@
-import Home from "../components/home";
-import Head from "next/head";
+import LandingPage from "@/components/landing-page/landing-page";
 
-export const metadata = {
-  title: "Gamma Developers",
-  description: "Gamma Developers is a leading software development company offering custom software, website development, mobile apps, AI solutions, and drag-and-drop website builders to help businesses grow and succeed.",
-
-  keywords: "Gamma Developers, website Development, developement , Software Company, Gamma, Developer,Mian Abubakar,Ghulam,Ibrahim ch, development",
-  viewport: "width=device-width, initial-scale=1.0",
-};
-
-export default function Page() {
+export default function Home() {
   return (
-    <>
-    <Head>
-      <link rel="icon" href="/favicon.png"/>
-    </Head>
-      <Home/>
-    </>
+    <main className="relative bg-[#0c1b0c] text-white min-h-screen">
+      <LandingPage />
+    </main>
   );
 }
