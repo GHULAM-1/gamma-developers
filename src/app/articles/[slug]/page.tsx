@@ -20,7 +20,7 @@ const builder = imageUrlBuilder(client);
 const urlFor = (source: any) => builder.image(source);
 
 export default function ArticlePage() {
-  // const { slug } = useParams<{ slug: string }>();
+
   const params = useParams<{ slug: string }>();
   const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
   const [article, setArticle] = useState<Article | null>(null);

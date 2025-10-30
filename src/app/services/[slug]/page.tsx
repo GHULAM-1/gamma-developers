@@ -17,10 +17,6 @@ import Footer from "@/components/footer";
 import RelatedProjectsSection from "@/components/services-pages/related-projectsSection";
 import { RelatedProject } from "@/types/projects/projects-types";
 
-// interface Props {
-//   params: { slug: string };
-// }
-
 interface Props {
   params: Promise<{ slug: string }>;
 }

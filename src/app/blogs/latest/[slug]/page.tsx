@@ -18,7 +18,7 @@ import { days, months } from "@/data/blogs/data";
 
 
 export default function LatestCardPage() {
-  // const { slug } = useParams<{ slug: string }>();
+
   const params = useParams<{ slug: string }>();
   const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
   const [card, setCard] = useState<any | null>(null);
