@@ -8,12 +8,12 @@ import Footer from "@/components/footer";
 import ArticlesTestimonials from "@/components/articles";
 import Stats from "@/components/stats";
 
-interface ProjectPageProps {
-  params: { slug: string };
-}
+type ProjectPageProps = {
+  params: Promise<{ slug: string }>;
+};
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = params;
+  const { slug } =await  params;
 
   const query = `*[_type == "projects" && slug.current == $slug][0]{
     _id,

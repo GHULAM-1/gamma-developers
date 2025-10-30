@@ -18,7 +18,9 @@ const builder = imageUrlBuilder(client);
 const urlFor = (source: any) => builder.image(source);
 
 export default function DiscoverDetailPage() {
-  const { slug } = useParams<{ slug: string }>();
+//   const { slug } = useParams<{ slug: string }>();
+const params = useParams<{ slug: string }>();
+const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
   const [discover, setDiscover] = useState<DiscoverCard | null>(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
